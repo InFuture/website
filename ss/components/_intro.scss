@@ -12,4 +12,56 @@
 	background-repeat: no-repeat;
 	background-size: 100% 70%, cover;
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001738', endColorstr='#003380',GradientType=0 ); /* IE6-9 */
+	
+	@include vertical-parent;
+	text-align: center;
+
+
+	.container {
+		@include vertical-center;
+	}
+
+	img.logo {
+		width: 130px;
+		@media screen and (min-width: $bp-sm) { width: 155px; }
+		@media screen and (min-width: $bp-md) { width: 180px; }
+		@media screen and (min-width: $bp-lg) { width: 205px; }
+		@media screen and (min-width: $bp-xl) { width: 230px; }
+	}
+
+	h1.title {
+		color: $color-white;
+		margin: em(1px) auto 0;
+		font-family: $title-font;
+		font-size: em(92px);
+		font-weight: 400;
+		text-transform: uppercase;
+
+		span {
+			color: $color-dodgerblue;
+			font-weight: 300;
+		}
+	}
+
+	h3.slogan {
+		color: $color-gallery;
+		margin: em(1px) auto;
+		margin: 0 auto;
+		font-family: $title-font;
+		font-weight: 400;
+		line-height: 1.8;
+		text-transform: uppercase;		
+	}
+
+	h5.details {
+		color: $color-silver;
+		margin: em(4px) auto;
+	}
+
+	button.apply {
+		margin: 7% auto;
+		-webkit-box-shadow: 0px 0px 50px 0px rgba(34, 154, 255, 0.33);
+		-moz-box-shadow: 0px 0px 50px 0px rgba(34, 154, 255, 0.33);
+		box-shadow: 0px 0px 50px 0px rgba(34, 154, 255, 0.33);
+	}
 }

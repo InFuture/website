@@ -153,7 +153,7 @@ html {
   @media screen and (min-width: 75em) {
     html {
       font-size: 80; } }
-  @media screen and (min-width: 90em) {
+  @media screen and (min-width: 100em) {
     html {
       font-size: 92.5%; } }
 
@@ -163,6 +163,9 @@ body {
   font-size: 1.25em;
   font-weight: 300;
   line-height: 1.25; }
+
+h {
+  font-size: 3em; }
 
 h {
   font-size: 2.25em; }
@@ -179,9 +182,6 @@ h {
 h {
   font-size: 0.75em; }
 
-h {
-  font-size: 0.5em; }
-
 h1, h2, h3, h4, h5, h6 {
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
@@ -190,11 +190,31 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0; }
 
 a {
-  color: #66b2ff;
+  color: #229aff;
   text-decoration: none;
   transition: color 175ms ease; }
   a:active, a:focus, a:hover {
     opacity: 0.8; }
+
+button {
+  width: 165px;
+  height: 40px;
+  color: #fdfdfd;
+  background-color: #229aff;
+  border: 0;
+  border-radius: 1px;
+  font-family: "Raleway", "Open Sans", sans-serif;
+  font-size: 0.875em;
+  font-weight: 400;
+  line-height: 40px;
+  text-transform: uppercase;
+  -webkit-transition: all 175ms ease;
+  -moz-transition: all 175ms ease;
+  -ms-transition: all 175ms ease;
+  -o-transition: all 175ms ease;
+  transition: all 175ms ease; }
+  button:hover {
+    background-color: #39a4ff; }
 
 html {
   box-sizing: border-box; }
@@ -245,6 +265,54 @@ html {
   background-repeat: no-repeat;
   background-size: 100% 70%, cover;
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001738', endColorstr='#003380',GradientType=0 );
-  /* IE6-9 */ }
+  /* IE6-9 */
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  text-align: center; }
+  .intro .container {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%); }
+  .intro img.logo {
+    width: 130px; }
+    @media screen and (min-width: 33.75em) {
+      .intro img.logo {
+        width: 155px; } }
+    @media screen and (min-width: 61.625em) {
+      .intro img.logo {
+        width: 180px; } }
+    @media screen and (min-width: 75em) {
+      .intro img.logo {
+        width: 205px; } }
+    @media screen and (min-width: 100em) {
+      .intro img.logo {
+        width: 230px; } }
+  .intro h1.title {
+    color: #fdfdfd;
+    margin: 0.0625em auto 0;
+    font-family: "Raleway", "Open Sans", sans-serif;
+    font-size: 5.75em;
+    font-weight: 400;
+    text-transform: uppercase; }
+    .intro h1.title span {
+      color: #229aff;
+      font-weight: 300; }
+  .intro h3.slogan {
+    color: #eee;
+    margin: 0.0625em auto;
+    margin: 0 auto;
+    font-family: "Raleway", "Open Sans", sans-serif;
+    font-weight: 400;
+    line-height: 1.8;
+    text-transform: uppercase; }
+  .intro h5.details {
+    color: #ccc;
+    margin: 0.25em auto; }
+  .intro button.apply {
+    margin: 7% auto;
+    -webkit-box-shadow: 0px 0px 50px 0px rgba(34, 154, 255, 0.33);
+    -moz-box-shadow: 0px 0px 50px 0px rgba(34, 154, 255, 0.33);
+    box-shadow: 0px 0px 50px 0px rgba(34, 154, 255, 0.33); }
 
 /*# sourceMappingURL=main.css.map */
