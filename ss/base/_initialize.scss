@@ -2,3 +2,9 @@ html, body {
 	@include full-screen;
 	min-height: 100%;
 }
+
+section {
+	width: 100%;
+	margin: 0;
+	padding: em(50px) 0;
+}
