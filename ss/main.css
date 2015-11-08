@@ -387,5 +387,10 @@ html {
   opacity: 0.85;
   font-weight: 300;
   text-align: center; }
+.about div.iframe-container {
+  width: 100%;
+  max-width: 560px;
+  height: 315px;
+  margin: 60px auto; }
 
 /*# sourceMappingURL=main.css.map */
