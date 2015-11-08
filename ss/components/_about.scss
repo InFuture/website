@@ -1,3 +1,11 @@
 .about {
-	// Add code for About section here
+	p {
+		width: 690px;
+		max-width: 90%;
+		margin: 0 auto;
+		color: $color-white;
+		opacity: 0.85;
+		font-weight: 300;
+		text-align: center;
+	}
 }
