@@ -233,16 +233,16 @@ a {
     opacity: 0.8; }
 
 button {
-  width: 165px;
-  height: 40px;
+  width: 189px;
+  height: 46px;
   color: #fdfdfd;
   background-color: #229aff;
   border: 0;
   border-radius: 1px;
   font-family: "Raleway", "Open Sans", sans-serif;
-  font-size: 0.875em;
+  font-size: 1em;
   font-weight: 400;
-  line-height: 40px;
+  line-height: 46px;
   text-transform: uppercase;
   -webkit-transition: all 175ms ease;
   -moz-transition: all 175ms ease;
@@ -351,9 +351,11 @@ html {
     -moz-box-shadow: 0px 0px 50px 0px rgba(34, 154, 255, 0.33);
     box-shadow: 0px 0px 50px 0px rgba(34, 154, 255, 0.33); }
 
-.stats {
+.strip, .stats {
   background-color: #5576a9;
-  padding: 1.875em 0;
+  padding: 2.5em 0; }
+
+.stats {
   -webkit-box-shadow: 0px 0px 50px 0px rgba(255, 255, 255, 0.5);
   -moz-box-shadow: 0px 0px 50px 0px rgba(255, 255, 255, 0.5);
   box-shadow: 0px 0px 50px 0px rgba(255, 255, 255, 0.5); }

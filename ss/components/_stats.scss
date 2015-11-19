@@ -1,6 +1,10 @@
-.stats {
+.strip {
 	background-color: $color-wedgewood;
-	padding: em(30px) 0;
+	padding: em(40px) 0;
+}
+
+.stats {
+	@extend .strip;
 	-webkit-box-shadow: 0px 0px 50px 0px rgba(255,255,255,0.5);
 	-moz-box-shadow: 0px 0px 50px 0px rgba(255,255,255,0.5);
 	box-shadow: 0px 0px 50px 0px rgba(255,255,255,0.5);
