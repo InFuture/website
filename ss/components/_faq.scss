@@ -1,3 +1,73 @@
 .faq {
-	// Add code for faq here
+	border: 1px solid red;
+	padding: 0 0 25% 0;
+	background: url(../images/city.svg) no-repeat center bottom 10%;
+
+	.container {
+		width: 70%;
+		margin: 3% auto 1%;
+		border: 1px solid blue;
+
+		.category {
+			@include span-columns(3);
+			// height: 60px;
+			color: $color-white;
+			text-align: center;
+			margin: 0;
+
+			button {
+				width: 100%;
+				height: 60px;
+				line-height: 50px;
+				background-color: rgba(255, 255, 255, 0.15);
+				font-family: $body-font;
+				font-size: em(20px);
+				border-radius: 0;
+				text-transform: capitalize;
+				outline: none;
+
+				&.active {
+					background-color: rgba(255, 255, 255, 0.25);
+				}
+
+				&:hover {
+					background-color: rgba(255, 255, 255, 0.20);
+				}
+			}
+		}
+
+		.faq-block {
+			@include span-columns(4);
+			color: $color-white;
+			padding: 0;
+			text-align: left;
+			margin: 0;
+			padding: 0;
+			
+			.question {
+				margin-bottom: 0;
+				font-weight: 400;
+			}
+
+			.answer {
+				width: 90%;
+				margin-top: em(7px);
+				font-size: em(16px);
+				font-weight: 300;
+				opacity: 0.75;
+			}
+		}
+	}
+
+	.more-questions {
+		color: $color-white;
+		font-weight: 400;
+		text-align: center;
+
+		a {
+			color: $color-white;
+			text-decoration: underline;
+		}
+	}
+	
 }
