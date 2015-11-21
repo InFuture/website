@@ -394,6 +394,12 @@ nav.navbar {
     -webkit-box-shadow: 0px 0px 50px 0px rgba(34, 154, 255, 0.33);
     -moz-box-shadow: 0px 0px 50px 0px rgba(34, 154, 255, 0.33);
     box-shadow: 0px 0px 50px 0px rgba(34, 154, 255, 0.33); }
+  .intro #hostedbyhackgeny {
+    position: absolute;
+    left: 50%;
+    bottom: 75px;
+    width: 500px;
+    margin-left: -250px; }
 
 .strip, .stats, .quotes {
   height: 200px;
