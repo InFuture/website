@@ -400,8 +400,9 @@ html {
   margin: 60px auto; }
 
 .faq {
+  margin: 0;
   padding: 3.75em 0 25% 0;
-  background: url(../images/city.svg) no-repeat center bottom 10%; }
+  background: url(../images/city.svg) no-repeat center bottom; }
   .faq .container {
     width: 70%;
     margin: 3% auto 1%; }
@@ -477,5 +478,87 @@ html {
 
 .display-hide {
   display: none; }
+
+.sponsors {
+  background: #2c5aa0; }
+  .sponsors .sponsor {
+    width: 100%;
+    height: 100%;
+    margin: 5px auto;
+    padding: 0px 10px;
+    opacity: 0.5;
+    background-position: center center !important;
+    background-origin: content-box !important;
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    -webkit-transition: all 175ms ease-out;
+    -moz-transition: all 175ms ease-out;
+    -ms-transition: all 175ms ease-out;
+    -o-transition: all 175ms ease-out;
+    transition: all 175ms ease-out; }
+    .sponsors .sponsor:hover {
+      opacity: 1; }
+  .sponsors .nodejs {
+    width: 70%;
+    height: 225px;
+    margin: 0 auto; }
+    .sponsors .nodejs .sponsor {
+      opacity: 1; }
+  .sponsors .flask {
+    width: 70%;
+    height: 175px;
+    margin: 0 auto; }
+    .sponsors .flask .sponsor {
+      opacity: 0.65;
+      float: left;
+      display: block;
+      margin-right: 0%;
+      width: 50%; }
+      .sponsors .flask .sponsor:last-child {
+        margin-right: 0; }
+      .sponsors .flask .sponsor:hover {
+        opacity: 1; }
+  .sponsors .rails {
+    width: 70%;
+    height: 125px;
+    margin: 0 auto; }
+    .sponsors .rails .sponsor {
+      float: left;
+      display: block;
+      margin-right: 0%;
+      width: 33.33333%;
+      opacity: 0.50; }
+      .sponsors .rails .sponsor:last-child {
+        margin-right: 0; }
+      .sponsors .rails .sponsor:hover {
+        opacity: 1; }
+  .sponsors .perl {
+    width: 70%;
+    height: 100px;
+    margin: 0 auto; }
+    .sponsors .perl .sponsor {
+      float: left;
+      display: block;
+      margin-right: 0%;
+      width: 25%;
+      opacity: 0.35; }
+      .sponsors .perl .sponsor:last-child {
+        margin-right: 0; }
+      .sponsors .perl .sponsor:hover {
+        opacity: 1; }
+  .sponsors .php {
+    width: 70%;
+    height: 75px;
+    margin: 0 auto; }
+    .sponsors .php .sponsor {
+      float: left;
+      display: block;
+      margin-right: 0%;
+      width: 16.66667%;
+      opacity: 0.2; }
+      .sponsors .php .sponsor:last-child {
+        margin-right: 0; }
+      .sponsors .php .sponsor:hover {
+        opacity: 1; }
 
 /*# sourceMappingURL=main.css.map */
