@@ -1,7 +1,8 @@
 .sponsors {
 	// Add code for sponsors here
-	background: $color-sttropaz;
-
+	background: url(../images/train.svg) no-repeat center bottom, $color-sttropaz;
+	padding: 0 0 10% 0;
+	
 	.sponsor {
 		width: 100%;
 	    height: 100%;
