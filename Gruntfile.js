@@ -35,27 +35,21 @@ module.exports = function (grunt) {
             }
         },
 
-        copy: {
-
-            options: {
-                timestamp: true,
-            },
-            main: {
-                nonull: true,
-                files: [{
-                    expand: true,
-                    cwd: 'src/images/',
-                    src: ['**'],
-                    dest: 'dist/images/'
-                }]
-            }
-
+        imagemin: {
+          dynamic: {
+              files: [{
+                  expand: true,
+                  cwd: 'src/images/',
+                  src: ['**/*.{png,jpg,gif,svg}'],
+                  dest: 'dist/images/'
+              }]
+          }  
         },
 
         watch: {
             style: {
                 files: ['src/ss/**/*.scss', '*.html', '*.js', "src/images/**"],
-                tasks: ['sass', 'htmlmin', 'uglify', 'copy']
+                tasks: ['sass', 'htmlmin', 'uglify', 'imagemin']
             }
         }
     });
@@ -64,8 +58,9 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-contrib-htmlmin');
     grunt.loadNpmTasks('grunt-contrib-concat');
-    grunt.loadNpmTasks('grunt-contrib-copy');
-    grunt.loadNpmTasks('grunt-contrib-uglify');
 
-    grunt.registerTask('default', ['sass:compile', 'uglify', 'htmlmin', 'copy', 'watch']);
+    grunt.loadNpmTasks('grunt-contrib-uglify');
+    grunt.loadNpmTasks('grunt-contrib-imagemin');
+
+    grunt.registerTask('default', ['sass:compile', 'uglify', 'htmlmin', 'imagemin', 'watch']);
 }
