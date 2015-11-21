@@ -11,7 +11,7 @@
 	<body>
 		<nav class="navbar">
 			<ul class="nav-list">
-				<li class="nav-element active"><a href="#">Home</a></li>
+				<li class="nav-element active"><a href="#home">Home</a></li>
 				<li class="nav-element"><a href="#about">About</a></li>
 				<li class="nav-element"><a href="#faq">FAQ</a></li>
 				<li class="nav-element"><a href="#sponsors">Sponsors</a></li>
@@ -19,20 +19,24 @@
 			</ul>
 		</nav>
 
-		<section class="intro">
+		<section class="intro" id="home">
 			<div class="container">
 				<img class="logo" src="images/logo.svg">
 				<h1 class="title"><span>In</span>Future</h1>
 				<h3 class="slogan">Hackathon for the Innovators of Tomorrow</h3>
 				<h5 class="details">February 27th - 28th, 2016 &middot; WeWork, NYC</h5>
-				<button class="apply">Apply</button>
+				<!--<button class="apply">Apply</button>-->
+				<form class="apply">
+					<input type="email" placeholder="Your email">
+					<button action="submit">Subscribe</button>
+				</form>
 			</div>
 			<img id="hostedbyhackgeny" src="images/hackgeny.png"></img>
 		</section>
 		<section class="stats">
 			<div class="container">
 				<div class="statistic">
-					<h1 class="number">350</h1>
+					<h1 class="number">300</h1>
 					<h3 class="target">HS Hackers</h3>
 				</div>
 
@@ -44,11 +48,6 @@
 				<div class="statistic">
 					<h1 class="number">2016</h1>
 					<h3 class="target">February</h3>
-				</div>
-
-				<div class="statistic">
-					<h1 class="number">40</h1>
-					<h3 class="target">Sponsors</h3>
 				</div>
 			</div>
 		</section>
@@ -91,7 +90,7 @@
 					<section id="faq-general">
 						<div class="faq-block">
 							<h2 class="question">Why are we doing this?</h2>
-							<p class="answer">We want high school students to have a way to express their ideas in a professional environment, as college students and adults often have. We believe they all can innovate the future.</p>
+							<p class="answer">We believe that high schoolers should be able to express their ideas in the same manner as college students and adults. The innovators of the future should be able to make an impact now.</p>
 						</div>
 						<div class="faq-block">
 							<h2 class="question">Where and when?</h2>
@@ -99,22 +98,22 @@
 						</div>
 						<div class="faq-block">
 							<h2 class="question">Who is behind this?</h2>
-							<p class="answer">InFuture is organized by Jay Mo, Liam Rahav, Branodn Yu, Grace Zhang, Amy Sorto, Michael Zhang, and Hack Gen Y.</p>
+							<p class="answer">InFuture is organized by a team of passionate high school students in collaboration with Hacking Generation Y.</p>
 						</div>
 					</section>
 
 					<section id="faq-before" class="opacity-invisible display-hide">
 						<div class="faq-block">
 							<h2 class="question">Who can apply?</h2>
-							<p class="answer">Every high school students are welcome to apply! Anyone beyond is welcome to apply as a mentor. If you're unsure if you are eligible, shoot us <a href="mailto:team@infuture.io">an email</a>.</p>
+							<p class="answer">Every high school student is welcome to apply! Anyone beyond is welcome to apply as a mentor. If you're unsure if you are eligible, shoot us <a href="mailto:team@infuture.io">an email</a>.</p>
 						</div>
 						<div class="faq-block">
 							<h2 class="question">What should I bring? How much does the event cost?</h2>
-							<p class="answer">You should bring your laptop and charger, school ID, positive attitude, and more - see the recommend list <a href="#">here</a>. This event is completely free, and food will be provided!</p>
+							<p class="answer">You should bring your laptop and charger, school ID, positive attitude, and more - see the list of recommended things <a href="#">here</a>. This event is completely free, and food will be provided!</p>
 						</div>
 						<div class="faq-block">
 							<h2 class="question">Do I need a team?</h2>
-							<p class="answer">Single person teams are allowed, but we encourage you to work in group! Teams can have up to four people spanning any schools.</p>
+							<p class="answer">You do not need to have a team before the event! Teams of up to four people are allowed, and we highly recommend you join one. We'll have networking sessions during the hackathon to help you find others looking for a team.</p>
 						</div>
 					</section>
 
@@ -125,11 +124,11 @@
 						</div>
 						<div class="faq-block">
 							<h2 class="question">Can I temporarily leave the event?</h2>
-							<p class="answer">Unfortunately due to liability issues, you may not temporarily leave the event unless given consent by an organizer.</p>
+							<p class="answer">Unfortunately, due to liability issues, you may not temporarily leave the event unless given consent by an organizer. If you have something you need to get, notify an organizer and they will provide it for you.</p>
 						</div>
 						<div class="faq-block">
 							<h2 class="question">Are there hardware or prizes?</h2>
-							<p class="answer">More information will be released soon.</p>
+							<p class="answer">The exact hardware kits and prizes will be announced at a later date, but the answer is definitely yes.</p> 
 						</div>
 					</section>
 
@@ -156,30 +155,30 @@
 		<section class="sponsors" id="sponsors">
 			<header><h1>Sponsors</h1></header>
 			<div class="nodejs">
-				<div class="sponsor" style="background: url(images/sponsors/microsoft.png"></div>
+				<div class="sponsor" style="background: url(images/sponsors/microsoft.png;"></div>
 			</div>
 			<div class="flask">
-				<div class="sponsor" style="background: url(images/sponsors/microsoft.png"></div>
-				<div class="sponsor" style="background: url(images/sponsors/microsoft.png"></div>
+				<div class="sponsor" style="background: url(images/sponsors/microsoft.png;"></div>
+				<div class="sponsor" style="background: url(images/sponsors/microsoft.png;"></div>
 			</div>
 			<div class="rails">
-				<div class="sponsor" style="background: url(images/sponsors/microsoft.png"></div>
-				<div class="sponsor" style="background: url(images/sponsors/microsoft.png"></div>
-				<div class="sponsor" style="background: url(images/sponsors/microsoft.png"></div>
+				<div class="sponsor" style="background: url(images/sponsors/microsoft.png;"></div>
+				<div class="sponsor" style="background: url(images/sponsors/microsoft.png;"></div>
+				<div class="sponsor" style="background: url(images/sponsors/microsoft.png;"></div>
 			</div>
 			<div class="perl">
-				<div class="sponsor" style="background: url(images/sponsors/microsoft.png"></div>
-				<div class="sponsor" style="background: url(images/sponsors/microsoft.png"></div>
-				<div class="sponsor" style="background: url(images/sponsors/microsoft.png"></div>
-				<div class="sponsor" style="background: url(images/sponsors/microsoft.png"></div>
+				<div class="sponsor" style="background: url(images/sponsors/microsoft.png;"></div>
+				<div class="sponsor" style="background: url(images/sponsors/microsoft.png;"></div>
+				<div class="sponsor" style="background: url(images/sponsors/microsoft.png;"></div>
+				<div class="sponsor" style="background: url(images/sponsors/microsoft.png;"></div>
 			</div>
 			<div class="php">
-				<div class="sponsor" style="background: url(images/sponsors/microsoft.png"></div>
-				<div class="sponsor" style="background: url(images/sponsors/microsoft.png"></div>
-				<div class="sponsor" style="background: url(images/sponsors/microsoft.png"></div>
-				<div class="sponsor" style="background: url(images/sponsors/microsoft.png"></div>
-				<div class="sponsor" style="background: url(images/sponsors/microsoft.png"></div>
-				<div class="sponsor" style="background: url(images/sponsors/microsoft.png"></div>
+				<div class="sponsor" style="background: url(images/sponsors/microsoft.png;"></div>
+				<div class="sponsor" style="background: url(images/sponsors/microsoft.png;"></div>
+				<div class="sponsor" style="background: url(images/sponsors/microsoft.png;"></div>
+				<div class="sponsor" style="background: url(images/sponsors/microsoft.png;"></div>
+				<div class="sponsor" style="background: url(images/sponsors/microsoft.png;"></div>
+				<div class="sponsor" style="background: url(images/sponsors/microsoft.png;"></div>
 			</div>
 		</section>
 		<section class="footer">

@@ -27,7 +27,7 @@
 	}
 
 	.statistic {
-		@include span-columns(3);
+		@include span-columns(4);
 		text-align: center;
 		text-transform: uppercase;
 
