@@ -52,7 +52,7 @@
 			<!-- THIS STRIP / BAR SPLITS THE ABOUT AND FAQ -->
 			<section class="quotes">
 				<div class="container">
-					<h1 class="quote">Change your life in one</h1>
+					<h1 class="quote">Change your life in one weekend</h1>
 				</div>
 			</section>
 			<!-- //////////////////iKON/////////////////// -->
@@ -60,23 +60,23 @@
 				<header><h1>Frequenty Asked Questions</h1></header>
 				<div class="container">
 					<div class="category">
-						<button class="active">General</button>
+						<button class="active" id="faq-general-nav" onclick="faqSwitch('#faq-general')">General</button>
 					</div>
 
 					<div class="category">
-						<button>Before</button>
+						<button id="faq-before-nav" onclick="faqSwitch('#faq-before')">Before</button>
 					</div>
 
 					<div class="category">
-						<button>During</button>
+						<button id="faq-during-nav" onclick="faqSwitch('#faq-during')">During</button>
 					</div>
 
 					<div class="category">
-						<button>Miscellaneous</button>
+						<button id="faq-misc-nav" onclick="faqSwitch('#faq-misc')">Miscellaneous</button>
 					</div>
 				</div>
 				<div class="container">
-					<section id="faq-general" class="opacity-visible display-show">
+					<section id="faq-general">
 						<div class="faq-block">
 							<h2 class="question">Why are we doing this?</h2>
 							<p class="answer">We want high school students to have a way to express their ideas in a professional environment, as college students and adults often have. We believe they all can innovate the future.</p>
@@ -142,5 +142,6 @@
 		</section>
 
 		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/faq.js"></script>
 	</body>
 </html>

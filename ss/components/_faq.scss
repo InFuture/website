@@ -70,3 +70,26 @@
 	}
 	
 }
+
+#faq-general, #faq-before, #faq-during, #faq-misc {
+	height: 240px;
+	margin: 0;
+	padding: 0;
+	-webkit-transition: all 175ms ease;
+	-moz-transition: all 175ms ease;
+	-ms-transition: all 175ms ease;
+	-o-transition: all 175ms ease;
+	transition: all 175ms ease;
+}
+
+.opacity-invisible {
+	opacity: 0;
+}
+
+.display-show {
+	display: block;
+}
+
+.display-hide {
+	display: none;
+}

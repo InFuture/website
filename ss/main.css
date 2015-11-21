@@ -157,7 +157,7 @@ section.main {
   padding: 0;
   background: #01337f;
   /* Old browsers */
-  background: linear-gradient(to bottom, #01337f, #0f459b, #0f459b, #0f459b, #2767ff, #3e83ff, #88b8ff, #ffb402); }
+  background: linear-gradient(to bottom, #01337f, #0f459b, #0f459b, #2767ff, #3e83ff, #88b8ff, #ffb402); }
 
 html {
   font-size: 62.5%; }
@@ -458,5 +458,24 @@ html {
     color: #fdfdfd;
     font-weight: 400;
     text-align: center; }
+
+#faq-general, #faq-before, #faq-during, #faq-misc {
+  height: 240px;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: all 175ms ease;
+  -moz-transition: all 175ms ease;
+  -ms-transition: all 175ms ease;
+  -o-transition: all 175ms ease;
+  transition: all 175ms ease; }
+
+.opacity-invisible {
+  opacity: 0; }
+
+.display-show {
+  display: block; }
+
+.display-hide {
+  display: none; }
 
 /*# sourceMappingURL=main.css.map */
