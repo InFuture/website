@@ -28,25 +28,28 @@ module.exports = function (grunt) {
             minify: {
                 files: {
                     'dist/js/jquery.min.js': 'src/js/jquery.min.js',
-                    'dist/js/jquery.plusanchor.min.js' : 'src/js/jquery.plusanchor.min.js',
-                    'dist/js/jquery.easing.min.js' : 'src/js/jquery.easing.min.js',
-                    'dist/js/script.js' : ['src/js/faq.js','src/js/nav.js']
+                    'dist/js/jquery.plusanchor.min.js': 'src/js/jquery.plusanchor.min.js',
+                    'dist/js/jquery.easing.min.js': 'src/js/jquery.easing.min.js',
+                    'dist/js/script.js': ['src/js/faq.js', 'src/js/nav.js']
                 }
             }
         },
 
         copy: {
-            copy: {
-                options: {
-                    timestamp: true,
-                },
-                main: {
-                    nonull: true,
-                    files: [
-                        { expand: true, src: ['src/images/**'], dest: 'dist/images/' },
-                    ]
-                }
+
+            options: {
+                timestamp: true,
+            },
+            main: {
+                nonull: true,
+                files: [{
+                    expand: true,
+                    cwd: 'src/images/',
+                    src: ['**'],
+                    dest: 'dist/images/'
+                }]
             }
+
         },
 
         watch: {
