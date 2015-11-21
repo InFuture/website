@@ -1,18 +1,25 @@
 // .strip.scss
 
 .strip {
-	padding: em(40px) 0;
+	height: 200px;
 	background-color: $color-wedgewood;
 	color: $color-white;
 	font-weight: 400;
 	text-align: center;
+	-webkit-box-shadow: 0px 0px 50px 0px rgba(255, 255, 255, 0.2);
+	-moz-box-shadow: 0px 0px 50px 0px rgba(255, 255, 255, 0.2);
+	box-shadow: 0px 0px 50px 0px rgba(255, 255, 255, 0.2);
+
+	@include vertical-parent;
+
+	.container {
+		@include vertical-center;
+	}
+
 }
 
 .stats {
 	@extend .strip;
-	-webkit-box-shadow: 0px 0px 50px 0px rgba(255,255,255,0.5);
-	-moz-box-shadow: 0px 0px 50px 0px rgba(255,255,255,0.5);
-	box-shadow: 0px 0px 50px 0px rgba(255,255,255,0.5);
 
 	.container {
 		width: 60%;
@@ -41,10 +48,15 @@
 
 .quotes {
 	@extend .strip;
-	padding: em(50px) 0;
 
 	.quote {
-		font-size: em(48px);
+		font-size: em(42px);
+		font-weight: 400;
 		margin: 0 auto;
+		text-transform: uppercase;
+	}
+
+	.container {
+		width: 100%;
 	}
 }

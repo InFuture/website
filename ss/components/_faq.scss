@@ -53,19 +53,20 @@
 				font-size: em(16px);
 				font-weight: 300;
 				opacity: 0.75;
+				text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
 			}
 		}
+	}
+
+	a {
+		color: $color-white;
+		text-decoration: underline;
 	}
 
 	.more-questions {
 		color: $color-white;
 		font-weight: 400;
 		text-align: center;
-
-		a {
-			color: $color-white;
-			text-decoration: underline;
-		}
 	}
 	
 }

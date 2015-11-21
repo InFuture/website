@@ -339,43 +339,51 @@ html {
     box-shadow: 0px 0px 50px 0px rgba(34, 154, 255, 0.33); }
 
 .strip, .stats, .quotes {
-  padding: 2.5em 0;
+  height: 200px;
   background-color: #5576a9;
   color: #fdfdfd;
   font-weight: 400;
-  text-align: center; }
+  text-align: center;
+  -webkit-box-shadow: 0px 0px 50px 0px rgba(255, 255, 255, 0.2);
+  -moz-box-shadow: 0px 0px 50px 0px rgba(255, 255, 255, 0.2);
+  box-shadow: 0px 0px 50px 0px rgba(255, 255, 255, 0.2);
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d; }
+  .strip .container, .stats .container, .quotes .container {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%); }
 
-.stats {
-  -webkit-box-shadow: 0px 0px 50px 0px rgba(255, 255, 255, 0.5);
-  -moz-box-shadow: 0px 0px 50px 0px rgba(255, 255, 255, 0.5);
-  box-shadow: 0px 0px 50px 0px rgba(255, 255, 255, 0.5); }
-  .stats .container {
-    width: 60%;
-    margin: 0 auto; }
-  .stats .statistic {
-    float: left;
-    display: block;
-    margin-right: 0%;
-    width: 25%;
-    text-align: center;
-    text-transform: uppercase; }
-    .stats .statistic:last-child {
-      margin-right: 0; }
-    .stats .statistic h1.number {
-      color: #fdfdfd;
-      font-size: 3.5em;
-      margin: 0 auto;
-      font-weight: 400; }
-    .stats .statistic h3.target {
-      color: #eee;
-      margin: 1px auto 0;
-      font-weight: 400; }
+.stats .container {
+  width: 60%;
+  margin: 0 auto; }
+.stats .statistic {
+  float: left;
+  display: block;
+  margin-right: 0%;
+  width: 25%;
+  text-align: center;
+  text-transform: uppercase; }
+  .stats .statistic:last-child {
+    margin-right: 0; }
+  .stats .statistic h1.number {
+    color: #fdfdfd;
+    font-size: 3.5em;
+    margin: 0 auto;
+    font-weight: 400; }
+  .stats .statistic h3.target {
+    color: #eee;
+    margin: 1px auto 0;
+    font-weight: 400; }
 
-.quotes {
-  padding: 3.125em 0; }
-  .quotes .quote {
-    font-size: 3em;
-    margin: 0 auto; }
+.quotes .quote {
+  font-size: 2.625em;
+  font-weight: 400;
+  margin: 0 auto;
+  text-transform: uppercase; }
+.quotes .container {
+  width: 100%; }
 
 .about p {
   width: 690px;
@@ -441,13 +449,14 @@ html {
         margin-top: 0.4375em;
         font-size: 1em;
         font-weight: 300;
-        opacity: 0.75; }
+        opacity: 0.75;
+        text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5); }
+  .faq a {
+    color: #fdfdfd;
+    text-decoration: underline; }
   .faq .more-questions {
     color: #fdfdfd;
     font-weight: 400;
     text-align: center; }
-    .faq .more-questions a {
-      color: #fdfdfd;
-      text-decoration: underline; }
 
 /*# sourceMappingURL=main.css.map */
