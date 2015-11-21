@@ -285,11 +285,40 @@ html {
     display: table; }
 
 nav.navbar {
-  width: 100px;
-  height: 75px;
-  line-height: 75px;
-  background-color: rgba(255, 255, 255, 0.25);
-  color: #fdfdfd; }
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  height: 125px;
+  line-height: 79px;
+  color: #fdfdfd;
+  text-align: center;
+  -webkit-transition: all 175ms ease;
+  -moz-transition: all 175ms ease;
+  -ms-transition: all 175ms ease;
+  -o-transition: all 175ms ease;
+  transition: all 175ms ease; }
+  nav.navbar .nav-list {
+    list-style: none;
+    opacity: 0.66; }
+    nav.navbar .nav-list li {
+      display: inline-block;
+      font-family: "Open Sans", sans-serif;
+      font-size: 1.375em;
+      font-weight: 400;
+      padding: 0 25px; }
+      nav.navbar .nav-list li a {
+        color: #fdfdfd; }
+
+.nav-scrolled {
+  height: 75px !important;
+  line-height: 41px !important;
+  background-color: white;
+  color: #1d1d1d !important;
+  -webkit-box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.33);
+  -moz-box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.33);
+  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.33); }
+  .nav-scrolled a {
+    color: #1d1d1d !important; }
 
 .intro {
   width: 100%;

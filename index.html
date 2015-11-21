@@ -9,6 +9,16 @@
         <link href="ss/main.css" rel="stylesheet">
 	</head>
 	<body>
+		<nav class="navbar">
+			<ul class="nav-list">
+				<li class="nav-element active"><a href="#">Home</a></li>
+				<li class="nav-element"><a href="#about">About</a></li>
+				<li class="nav-element"><a href="#faq">FAQ</a></li>
+				<li class="nav-element"><a href="#sponsors">Sponsors</a></li>
+				<li class="nav-element"><a href="#apply">Apply</a></li>
+			</ul>
+		</nav>
+
 		<section class="intro">
 			<div class="container">
 				<img class="logo" src="images/logo.svg">
@@ -42,7 +52,7 @@
 			</div>
 		</section>
 		<section class="main">
-			<section class="about">
+			<section class="about" id="about">
 				<header><h1>What is InFuture?</h1></header>
 				<p>InFuture is a hackathon that will gather 300 of the nation's most passionate and innovative high school students for an amazing event on February 27th - 28th, 2016.</p>
 				<!-- <div class="iframe-container">
@@ -57,7 +67,7 @@
 				</div>
 			</section>
 			<!-- //////////////////iKON/////////////////// -->
-			<section class="faq">
+			<section class="faq" id="faq">
 				<header><h1>Frequenty Asked Questions</h1></header>
 				<div class="container">
 					<div class="category">
@@ -142,7 +152,7 @@
 			</section>
 		</section>
 
-		<section class="sponsors">
+		<section class="sponsors" id="sponsors">
 			<header><h1>Sponsors</h1></header>
 			<div class="nodejs">
 				<div class="sponsor" style="background: url(images/sponsors/microsoft.png"></div>
@@ -191,6 +201,15 @@
 			</div>
 		</footer>
 		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.plusanchor.min.js"></script>
+		<script type="text/javascript" src="js/jquery.easing.min.js"></script>
+		<script type="text/javascript">
+			$('body').plusAnchor({
+        		easing: 'easeInOutExpo',
+		        speed:  700
+		    });
+		</script>
+		<script type="text/javascript" src="js/nav.js"></script>
 		<script type="text/javascript" src="js/faq.js"></script>
 	</body>
 </html>
