@@ -1,7 +1,11 @@
-// TODO: Move .strip to a more general .scss file, rather than one bound to .stats
+// .strip.scss
+
 .strip {
-	background-color: $color-wedgewood;
 	padding: em(40px) 0;
+	background-color: $color-wedgewood;
+	color: $color-white;
+	font-weight: 400;
+	text-align: center;
 }
 
 .stats {
@@ -32,5 +36,15 @@
 			margin: 1px auto 0;
 			font-weight: 400;
 		}
+	}
+}
+
+.quotes {
+	@extend .strip;
+	padding: em(50px) 0;
+
+	.quote {
+		font-size: em(48px);
+		margin: 0 auto;
 	}
 }

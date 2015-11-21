@@ -157,20 +157,7 @@ section.main {
   padding: 0;
   background: #01337f;
   /* Old browsers */
-  background: -moz-linear-gradient(top, #01337f 0%, #4186ff 30%, #3e83ff 50%, #88b8ff 90%, #ffb402 100%);
-  /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #01337f), color-stop(30%, #4186ff), color-stop(50%, #3e83ff), color-stop(90%, #88b8ff), color-stop(100%, #ffb402));
-  /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top, #01337f 0%, #4186ff 30%, #3e83ff 50%, #88b8ff 90%, #ffb402 100%);
-  /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top, #01337f 0%, #4186ff 100%);
-  /* Opera 11.10+ */
-  background: -ms-linear-gradient(top, #01337f 0%, #4186ff 100%);
-  /* IE10+ */
-  background: linear-gradient(to bottom, #01337f 0%, #4186ff 100%);
-  /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#01337f', endColorstr='#4186ff',GradientType=0 );
-  /* IE6-9 */ }
+  background: linear-gradient(to bottom, #01337f, #0f459b, #0f459b, #0f459b, #2767ff, #3e83ff, #88b8ff, #ffb402); }
 
 html {
   font-size: 62.5%; }
@@ -351,9 +338,12 @@ html {
     -moz-box-shadow: 0px 0px 50px 0px rgba(34, 154, 255, 0.33);
     box-shadow: 0px 0px 50px 0px rgba(34, 154, 255, 0.33); }
 
-.strip, .stats {
+.strip, .stats, .quotes {
+  padding: 2.5em 0;
   background-color: #5576a9;
-  padding: 2.5em 0; }
+  color: #fdfdfd;
+  font-weight: 400;
+  text-align: center; }
 
 .stats {
   -webkit-box-shadow: 0px 0px 50px 0px rgba(255, 255, 255, 0.5);
@@ -365,8 +355,8 @@ html {
   .stats .statistic {
     float: left;
     display: block;
-    margin-right: 2.35765%;
-    width: 23.23176%;
+    margin-right: 0%;
+    width: 25%;
     text-align: center;
     text-transform: uppercase; }
     .stats .statistic:last-child {
@@ -380,6 +370,12 @@ html {
       color: #eee;
       margin: 1px auto 0;
       font-weight: 400; }
+
+.quotes {
+  padding: 3.125em 0; }
+  .quotes .quote {
+    font-size: 3em;
+    margin: 0 auto; }
 
 .about p {
   width: 690px;
@@ -396,18 +392,16 @@ html {
   margin: 60px auto; }
 
 .faq {
-  border: 1px solid red;
-  padding: 0 0 25% 0;
+  padding: 3.75em 0 25% 0;
   background: url(../images/city.svg) no-repeat center bottom 10%; }
   .faq .container {
     width: 70%;
-    margin: 3% auto 1%;
-    border: 1px solid blue; }
+    margin: 3% auto 1%; }
     .faq .container .category {
       float: left;
       display: block;
-      margin-right: 2.35765%;
-      width: 23.23176%;
+      margin-right: 0%;
+      width: 25%;
       color: #fdfdfd;
       text-align: center;
       margin: 0; }
@@ -430,8 +424,8 @@ html {
     .faq .container .faq-block {
       float: left;
       display: block;
-      margin-right: 2.35765%;
-      width: 31.76157%;
+      margin-right: 0%;
+      width: 33.33333%;
       color: #fdfdfd;
       padding: 0;
       text-align: left;
