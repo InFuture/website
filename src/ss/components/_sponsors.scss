@@ -62,7 +62,7 @@
 		.sponsor {
 			@include span-columns(4);
 			opacity: 0.50;
-
+			
 			&:hover {
 		    	opacity: 1;
 		    }
