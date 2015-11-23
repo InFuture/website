@@ -30,7 +30,7 @@ module.exports = function (grunt) {
                     'dist/js/jquery.min.js': 'src/js/jquery.min.js',
                     'dist/js/jquery.plusanchor.min.js': 'src/js/jquery.plusanchor.min.js',
                     'dist/js/jquery.easing.min.js': 'src/js/jquery.easing.min.js',
-                    'dist/js/script.js': ['src/js/faq.js', 'src/js/nav.js']
+                    'dist/js/script.js': ['src/js/faq.js', 'src/js/nav.js', 'src/js/sub.js']
                 }
             }
         },
@@ -48,7 +48,7 @@ module.exports = function (grunt) {
 
         watch: {
             style: {
-                files: ['src/ss/**/*.scss', 'src/*.html', 'src/*.js', "src/images/**/*"],
+                files: ['src/ss/**/*.scss', 'src/*.html', 'src/js/*.js', "src/images/**/*"],
                 tasks: ['sass', 'htmlmin', 'uglify', 'imagemin']
             }
         }

@@ -27,8 +27,8 @@
 				<h5 class="details">February 27th - 28th, 2016 &middot; WeWork, NYC</h5>
 				<!--<button class="apply">Apply</button>-->
 				<form class="apply">
-					<input type="email" placeholder="Your email">
-					<button action="submit">Subscribe</button>
+					<input id="submitForm" type="email" placeholder="Your email">
+					<button id="submitButton" action="submit">Subscribe</button>
 				</form>
 			</div>
 			<img id="hostedbyhackgeny" src="images/hackgeny.png"></img>
@@ -156,12 +156,12 @@
 			<header><h1>Sponsors</h1></header>
 			<div class="rails">
 				<div class="sponsor" style=""></div>
-				<div class="sponsor" style="background: url('images/sponsors/wework.png');"></div>
+				<a href="http://wework.com" target="_blank"><div class="sponsor" style="background: url('images/sponsors/wework.png');"></div></a>
 				<div class="sponsor" style=""></div>
 			</div>
 			<div class="rails">
 				<div class="sponsor" style=""></div>
-				<div class="sponsor" style="background: url('images/sponsors/younghackers.png');"></div>
+				<a href="http://younghackers.us" target="_blank"><div class="sponsor" style="background: url('images/sponsors/younghackers.png');"></div></a>
 				<div class="sponsor" style=""></div>
 			</div>
 			<!-- <div class="nodejs">
@@ -221,6 +221,7 @@
 		</script>
 		<script type="text/javascript" src="js/nav.js"></script>
 		<script type="text/javascript" src="js/faq.js"></script>
+		<script type="text/javascript" src="js/sub.js"></script>
 		<script type="text/javascript"src="js/script.js"></script>
 	</body>
 </html>
