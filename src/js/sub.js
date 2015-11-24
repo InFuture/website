@@ -13,8 +13,6 @@ $("#submitButton").click(function () {
 					$(".intro > .container").append("<p class=\"response bad\">" + data["message"] + "</p>")
 				}
 			}, 'json');
-	} else {
-		$(".intro > .container").append("<p class=\"response bad\">Please enter a valid email.</p>")
 	}
 });
 
@@ -33,9 +31,7 @@ $("#submitButton2").click(function () {
 					$(".footer > .container").append("<p class=\"response bad\">" + data["message"] + "</p>")
 				}
 			}, 'json');
-	} else {
-		$(".footer > .container").append("<p class=\"response bad\">Please enter a valid email.</p>")
-	}
+	} 
 });
 
 function validateEmail(sEmail) {
