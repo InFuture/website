@@ -57,16 +57,23 @@
 		color: $color-silver;
 		margin: em(4px) auto;
 	}
-
-	button.apply {
-		margin: 7% auto;
-		-webkit-box-shadow: 0px 0px 50px 0px rgba(34, 154, 255, 0.33);
-		-moz-box-shadow: 0px 0px 50px 0px rgba(34, 154, 255, 0.33);
-		box-shadow: 0px 0px 50px 0px rgba(34, 154, 255, 0.33);
-	}
 	
 	form.apply {
 		margin: 7% auto;
+
+		input {
+			-webkit-box-shadow: 0px 0px 50px 0px rgba(255, 255, 255, 0.33);
+			-moz-box-shadow: 0px 0px 50px 0px rgba(255, 255, 255, 0.33);
+			box-shadow: 0px 0px 50px 0px rgba(255, 255, 255, 0.33);
+		}
+
+		button {
+			position: relative;
+			top: 1px;
+			-webkit-box-shadow: 0px 0px 50px 0px rgba(34, 154, 255, 0.33);
+			-moz-box-shadow: 0px 0px 50px 0px rgba(34, 154, 255, 0.33);
+			box-shadow: 0px 0px 50px 0px rgba(34, 154, 255, 0.33);
+		}
 	}
 
 	#hostedbyhackgeny {
