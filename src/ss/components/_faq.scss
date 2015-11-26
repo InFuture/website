@@ -1,7 +1,15 @@
 .faq {
 	margin: 0;
-	padding: em(60px) 0 20% 0;
-	background: url(../images/city.svg) no-repeat center bottom;
+	padding: em(100px) 0 20% 0;
+	// background: url(../images/city.svg) no-repeat center bottom, linear-gradient(to bottom, #01337f, #0f459b, #0f459b, #2767ff, #3e83ff, #88b8ff, #ffb402);
+	// background: url(../images/city.svg) no-repeat center bottom, linear-gradient(to bottom, #01337f, #0f459b, #0f459b, #2767ff, #3e83ff, #88b8ff, #ffb402);
+
+	background: url(../images/city.svg) no-repeat center bottom, #01337f; /* Old browsers */
+	background: url(../images/city.svg) no-repeat center bottom, -moz-linear-gradient(top,  #01337f 0%, #0f459b 10%, #88b8ff 66%, #ffb402 100%); /* FF3.6-15 */
+	background: url(../images/city.svg) no-repeat center bottom, -webkit-linear-gradient(top,  #01337f 0%,#0f459b 10%,#88b8ff 66%,#ffb402 100%); /* Chrome10-25,Safari5.1-6 */
+	background: url(../images/city.svg) no-repeat center bottom, linear-gradient(to bottom,  #01337f 0%,#0f459b 10%,#88b8ff 66%,#ffb402 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	// filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#01337f', endColorstr='#ffb402',GradientType=0 ); /* IE6-9 */
+
 
 	.container {
 		width: 70%;
