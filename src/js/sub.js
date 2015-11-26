@@ -18,9 +18,11 @@ $("#submitButton").click(function () {
 
 $("#submitButton2").click(function () {
 	if (validateEmail($("#submitForm2").val())) {
+		console.log($("#submitForm2").serialize());
 		$.post(
 			"infuture.io/subscribe",
-			$("#submitForm2").serialize(),
+			// $(#submitForm2).serialize();
+			"email: "+ $("#submitForm2").val(),
 			function (data) {
 				data = $.parseJSON(data);
 				if (data["success"] == 1) {
