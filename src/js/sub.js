@@ -1,6 +1,6 @@
 $("#submitForm").submit(function () {
 	$.post(
-		"infuture.io/subscribe",
+		"http://infuture.io/subscribe",
 		$("#submitForm").serialize(),
 		function (data) {
 			data = $.parseJSON(data);
@@ -16,8 +16,8 @@ $("#submitForm").submit(function () {
 
 $("#submitForm2").submit(function () {
 	$.post(
-		"infuture.io/subscribe",
-		{email: $("#submitForm2 > input").val()},
+		"http://infuture.io/subscribe",
+		{"email": $("#submitForm2 > input").val()},
 		function (data) {
 			data = $.parseJSON(data);
 			if (data["success"] == 1) {
