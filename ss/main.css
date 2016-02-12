@@ -186,15 +186,19 @@ html, body {
 
 .display-none {
   display: none;
-  -webkit-transition: all 175ms ease;
-  -moz-transition: all 175ms ease;
-  transition: all 175ms ease; }
+  -webkit-transition: all all 175ms ease ease;
+  -moz-transition: all all 175ms ease ease;
+  -ms-transition: all all 175ms ease ease;
+  -o-transition: all all 175ms ease ease;
+  transition: all all 175ms ease ease; }
 
 .visible-none {
   opacity: 0;
-  -webkit-transition: all 175ms ease;
-  -moz-transition: all 175ms ease;
-  transition: all 175ms ease; }
+  -webkit-transition: all all 175ms ease ease;
+  -moz-transition: all all 175ms ease ease;
+  -ms-transition: all all 175ms ease ease;
+  -o-transition: all all 175ms ease ease;
+  transition: all all 175ms ease ease; }
 
 html {
   font-size: 62.5%; }
@@ -268,9 +272,11 @@ button {
   border-radius: 1px;
   outline: none;
   text-transform: uppercase;
-  -webkit-transition: all 175ms ease;
-  -moz-transition: all 175ms ease;
-  transition: all 175ms ease; }
+  -webkit-transition: all all 175ms ease ease;
+  -moz-transition: all all 175ms ease ease;
+  -ms-transition: all all 175ms ease ease;
+  -o-transition: all all 175ms ease ease;
+  transition: all all 175ms ease ease; }
   button:hover {
     background-color: #55b1ff; }
 
@@ -286,9 +292,11 @@ input {
   font: normal normal 400 0.29091 "Raleway", "Open Sans", sans-serif;
   text-align: left;
   outline: none;
-  -webkit-transition: all 175ms ease;
-  -moz-transition: all 175ms ease;
-  transition: all 175ms ease; }
+  -webkit-transition: all all 175ms ease ease;
+  -moz-transition: all all 175ms ease ease;
+  -ms-transition: all all 175ms ease ease;
+  -o-transition: all all 175ms ease ease;
+  transition: all all 175ms ease ease; }
 
 html {
   box-sizing: border-box; }
@@ -313,6 +321,24 @@ html {
     clear: both;
     content: "";
     display: table; }
+
+.social a {
+  margin: 0 0.625em;
+  color: #fdfdfd;
+  font-size: 1.5em;
+  -webkit-transition: all 200ms ease;
+  -moz-transition: all 200ms ease;
+  -ms-transition: all 200ms ease;
+  -o-transition: all 200ms ease;
+  transition: all 200ms ease; }
+  .social a:nth-child(1):hover {
+    color: #2ecc71; }
+  .social a:nth-child(2):hover {
+    color: #8b9dc3; }
+  .social a:nth-child(3):hover {
+    color: #3CF3CF; }
+  .social a:nth-child(4):hover {
+    color: #333332; }
 
 .intro {
   height: 100%;
@@ -364,5 +390,10 @@ html {
     .intro #sub-form h6 {
       margin: 0.625em auto 0;
       color: #aaa; }
+  .intro .social {
+    position: absolute;
+    bottom: 30px;
+    width: 100%;
+    text-align: center; }
 
 /*# sourceMappingURL=main.css.map */
