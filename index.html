@@ -6,9 +6,24 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 
 		<!-- Styles -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
         <link href="ss/main.css" rel="stylesheet">
 	</head>
 	<body>
+        <section class="intro">
+            <div class="vertical-center">
+                <img class="logo" src="images/logo.svg"></img>
+                <h1 class="title"><span>In</span>Future</h1>
+                <h3 class="description">Hackathon for the Innovators of Tomorrow</h3>
+                <h5 class="details">May 14th - 15th, 2016 · Rise New York</h5>
+                <form id="sub-form">
+                    <input placeholder="Your Email">
+                    <button>Subscribe</button>
+                    <h6>We'll keep you updated on only important things</h6>
+                </form>
+            </div>
+        </section>
+
 		<script type="text/javascript" src="js/jquery.min.js"></script>
 		<script type="text/javascript" src="js/jquery.easing.min.js"></script>
 		<script type="text/javascript" src="js/jquery.plusanchor.min.js"></script>
@@ -16,7 +31,7 @@
 			$(document).ready(function(){
 			    $('body').plusAnchor({
 			        easing: 'easeInOutExpo',
-			        speed:  700
+			        speed: 700
 			    });
 			});
 		</script>

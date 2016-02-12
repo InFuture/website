@@ -1,19 +1,19 @@
 button {
-	@include size(em(200px) em(50px));
+	@include size(em(175px) em(42px));
 	
 	color: $color-white;
 	background-color: $color-dodgerblue;
 
-	font-family: $title-font;
-	@include font-sw(em(16px), $default-font-weight);
+	font-family: $body-font;
+	@include font-sw(em(16px), 400);
 
 	border: 0;
-	border-radius: $border-radius;
+	border-radius: 1px;
 
 	outline: none;
 	text-transform: uppercase;
 
 	@include transition(all $animation-duration $animation-timing);
 
-	&:hover { background-color: shade($color-dodgerblue, 10%); }
+	&:hover { background-color: lighten($color-dodgerblue, 10%); }
 }

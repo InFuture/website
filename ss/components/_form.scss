@@ -1,9 +1,9 @@
 // Form.scss
 
 input {
-	@include size(em(480px) em(55px));
+	@include size(em(375px) em(42px));
 	@include margin(0 auto);
-	@include padding(0 auto);
+	@include padding(0 em(20px));
 	
 	color: $color-black;
 	background-color: $color-white;
