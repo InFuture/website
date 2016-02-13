@@ -14,6 +14,7 @@ input {
 	font: normal normal $default-font-weight em(16px)/em(55px) $title-font;
 	
 	text-align: left;
+	vertical-align: top;
 	outline: none;
 
 	@include transition(all $animation-duration $animation-timing);

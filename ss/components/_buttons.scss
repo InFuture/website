@@ -1,6 +1,7 @@
 button {
 	@include size(em(175px) em(42px));
-	
+	@include margin(0 auto);
+
 	color: $color-white;
 	background-color: $color-dodgerblue;
 
@@ -10,8 +11,11 @@ button {
 	border: 0;
 	border-radius: 1px;
 
-	outline: none;
+	text-align: center;
 	text-transform: uppercase;
+	vertical-align: top;
+	outline: none;
+
 
 	@include transition(all $animation-duration $animation-timing);
 

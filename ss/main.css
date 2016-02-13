@@ -263,6 +263,7 @@ a {
 button {
   height: 2.625em;
   width: 10.9375em;
+  margin: 0 auto;
   color: #fdfdfd;
   background-color: #229aff;
   font-family: "Open Sans", "Raleway", sans-serif;
@@ -270,8 +271,10 @@ button {
   font-weight: 400;
   border: 0;
   border-radius: 1px;
-  outline: none;
+  text-align: center;
   text-transform: uppercase;
+  vertical-align: top;
+  outline: none;
   -webkit-transition: all all 175ms ease ease;
   -moz-transition: all all 175ms ease ease;
   -ms-transition: all all 175ms ease ease;
@@ -291,6 +294,7 @@ input {
   border-radius: 1px;
   font: normal normal 400 0.29091 "Raleway", "Open Sans", sans-serif;
   text-align: left;
+  vertical-align: top;
   outline: none;
   -webkit-transition: all all 175ms ease ease;
   -moz-transition: all all 175ms ease ease;
@@ -332,13 +336,13 @@ html {
   -o-transition: all 200ms ease;
   transition: all 200ms ease; }
   .social a:nth-child(1):hover {
-    color: #2ecc71; }
+    color: #388E3C; }
   .social a:nth-child(2):hover {
-    color: #8b9dc3; }
+    color: #3b5998; }
   .social a:nth-child(3):hover {
-    color: #3CF3CF; }
+    color: #55acee; }
   .social a:nth-child(4):hover {
-    color: #333332; }
+    color: #555; }
 
 .intro {
   height: 100%;
