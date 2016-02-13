@@ -200,6 +200,15 @@ html, body {
   -o-transition: all all 175ms ease ease;
   transition: all all 175ms ease ease; }
 
+header {
+  padding: 3.125em 0 1.25em; }
+  header h2 {
+    color: #fdfdfd;
+    font-family: "Open Sans", "Raleway", sans-serif;
+    font-size: 2.25em;
+    font-weight: 400;
+    text-align: center; }
+
 html {
   font-size: 62.5%; }
   @media screen and (min-width: 33.75em) {
@@ -316,8 +325,8 @@ html {
     display: table; }
 
 .container {
-  width: 50em;
-  max-width: 90%;
+  width: 75em;
+  max-width: 95%;
   margin-left: auto;
   margin-right: auto;
   margin: 0 auto; }
@@ -399,5 +408,70 @@ html {
     bottom: 30px;
     width: 100%;
     text-align: center; }
+
+.faq {
+  background: url(../images/city.svg) center bottom no-repeat, linear-gradient(#003380, #0052cc, #66a4ff, #ffb402);
+  background-size: auto 33%, 100% 100%;
+  padding: 5% 0 20%; }
+  .faq .faq-nav {
+    @includem margin(0 auto));
+    padding: 0 0.625em 6.25em; }
+    .faq .faq-nav div {
+      float: left;
+      display: block;
+      margin-right: 0%;
+      width: 25%;
+      padding: 0.9375em 0;
+      color: #fdfdfd;
+      background: rgba(255, 255, 255, 0.15);
+      font-family: "Open Sans", "Raleway", sans-serif;
+      font-size: 1.125em;
+      font-weight: 400;
+      text-align: center;
+      -webkit-transition: all 175ms ease;
+      -moz-transition: all 175ms ease;
+      -ms-transition: all 175ms ease;
+      -o-transition: all 175ms ease;
+      transition: all 175ms ease; }
+      .faq .faq-nav div:last-child {
+        margin-right: 0; }
+      .faq .faq-nav div:hover {
+        background: rgba(255, 255, 255, 0.33); }
+      .faq .faq-nav div.active {
+        background: rgba(255, 255, 255, 0.33); }
+  .faq .container .block {
+    float: left;
+    display: block;
+    margin-right: 0%;
+    width: 33.33333%;
+    padding: 0 0.625em; }
+    .faq .container .block:last-child {
+      margin-right: 0; }
+    @media screen and (max-width: 62.5em) {
+      .faq .container .block {
+        float: left;
+        display: block;
+        margin-right: 0%;
+        width: 50%; }
+        .faq .container .block:last-child {
+          margin-right: 0; } }
+    @media screen and (max-width: 45em) {
+      .faq .container .block {
+        float: left;
+        display: block;
+        margin-right: 0%;
+        width: 100%; }
+        .faq .container .block:last-child {
+          margin-right: 0; } }
+    .faq .container .block h2.question {
+      color: #fdfdfd;
+      margin: 0 0 0.1875em;
+      font-size: 1.75em;
+      font-weight: 400; }
+    .faq .container .block p.answer {
+      color: #ddd;
+      margin: 0 0 1.5625em;
+      font-size: 1.125em;
+      font-weight: 400; }
 
 /*# sourceMappingURL=main.css.map */
