@@ -477,4 +477,11 @@ html {
       font-size: 1.125em;
       font-weight: 400; }
 
+.sponsors {
+  background: #2C5AA0;
+  background: #2C5AA0;
+  text-align: center; }
+  .sponsors img {
+    width: 18.75em; }
+
 /*# sourceMappingURL=main.css.map */
