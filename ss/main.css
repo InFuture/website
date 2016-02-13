@@ -478,10 +478,17 @@ html {
       font-weight: 400; }
 
 .sponsors {
+  padding: 0 0 1.5625em;
   background: #2C5AA0;
   background: #2C5AA0;
   text-align: center; }
   .sponsors img {
     width: 18.75em; }
+
+footer {
+  background: #214478;
+  background: #214478;
+  padding: 1.5625em 0;
+  text-align: center; }
 
 /*# sourceMappingURL=main.css.map */
