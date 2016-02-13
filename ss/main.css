@@ -213,13 +213,13 @@ html {
   font-size: 62.5%; }
   @media screen and (min-width: 33.75em) {
     html {
-      font-size: 65%; } }
+      font-size: 70%; } }
   @media screen and (min-width: 61.625em) {
     html {
-      font-size: 70%; } }
+      font-size: 78%; } }
   @media screen and (min-width: 75em) {
     html {
-      font-size: 80; } }
+      font-size: 85%; } }
   @media screen and (min-width: 100em) {
     html {
       font-size: 92.5%; } }
@@ -410,9 +410,12 @@ html {
     text-align: center; }
 
 .faq {
-  background: url(../images/city.svg) center bottom no-repeat, linear-gradient(#003380, #0052cc, #66a4ff, #ffb402);
+  background: url(../images/city.svg) center bottom no-repeat, linear-gradient(#003380, #0052cc, #66a4ff 80%, #ffb402);
   background-size: auto 33%, 100% 100%;
-  padding: 5% 0 20%; }
+  padding: 7% 0 20%; }
+  @media screen and (max-width: 62.5em) {
+    .faq {
+      padding: 5% 0 30%; } }
   .faq .faq-nav {
     @includem margin(0 auto));
     padding: 0 0.625em 6.25em; }
