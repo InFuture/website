@@ -374,7 +374,8 @@ html {
     transform: translateY(-50%);
     text-align: center; }
   .intro .logo {
-    width: 15.625em; }
+    width: 15.625em;
+    margin-top: 2vh; }
   .intro h1.title {
     margin: 0.125em 0 0;
     font-family: "Raleway", "Open Sans", sans-serif;
@@ -385,6 +386,10 @@ html {
     .intro h1.title span {
       color: #229aff;
       font-weight: 300; }
+    @media screen and (max-width: 33.75em) {
+      .intro h1.title {
+        font-size: 6em;
+        font-weight: 400; } }
   .intro h3.description {
     margin: 0;
     font-size: 1.5em;
@@ -403,6 +408,10 @@ html {
     .intro #sub-form1 h6 {
       margin: 0.625em auto 0;
       color: #aaa; }
+    .intro #sub-form1 p.good {
+      color: #2ecc71; }
+    .intro #sub-form1 p.bad {
+      color: #e74c3c; }
   .intro .social {
     position: absolute;
     bottom: 30px;

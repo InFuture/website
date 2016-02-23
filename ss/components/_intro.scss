@@ -12,6 +12,7 @@
 	
 	.logo {
 		width: em(250px);
+		margin-top: 2vh;
 	}
 
 	h1.title {
@@ -24,6 +25,10 @@
 		span {
 			color: $color-dodgerblue;
 			font-weight: 300;
+		}
+
+		@media screen and (max-width: $bp-sm) { 
+			@include font-sw(em(96px), 400);
 		}
 	}
 
@@ -50,6 +55,14 @@
 		h6 {
 			@include margin(em(10px) auto 0);
 			color: $color-silverchalice;
+		}
+
+		p.good {
+			color: #2ecc71;
+		}
+
+		p.bad {
+			color: #e74c3c;
 		}
 	}
 

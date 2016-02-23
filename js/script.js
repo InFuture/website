@@ -8,15 +8,17 @@ var subscribe_form = function(id) {
 			data = $.parseJSON(data);
 			if (data["success"] == 1) {
 				// Good
-				$('.footer > .containeraction="submit"').append("<p class=\"response good\">" + data["message"] + "</p>")
-				console.log("good");
+				$('#email-status').removeClass('bad');
+				$('#email-status').addClass('good');
 			}
 
 			else {
 				// Bad
-				$(".footer > .container").append("<p class=\"response bad\">" + data["message"] + "</p>")
-				console.log("bad");
+				$('#email-status').removeClass('good');
+				$('#email-status').addClass('bad');
 			}
+
+			$('#email-status').text(data["message"]);
 		},
 		"json"
 	);
