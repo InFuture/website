@@ -60,13 +60,13 @@
 
             <div class="container">
                 <div class="faq-nav">
-                    <div onclick="switchTo('#general');" class="active">General</div>
-                    <div onclick="switchTo('#before');">Before</div>
-                    <div onclick="switchTo('#during');">During</div>
-                    <div onclick="switchTo('#after');">After</div>
+                    <div id="navtab-1" onclick="switchTo(1);" class="active">General</div>
+                    <div id="navtab-2" onclick="switchTo(2);">Before</div>
+                    <div id="navtab-3" onclick="switchTo(3);">During</div>
+                    <div id="navtab-4" onclick="switchTo(4);">After</div>
                 </div>
 
-                <div id="general">
+                <div id="faqrow-1">
                     <div class="block">
                         <h2 class="question">What's a hackathon?</h2>
                         <p class="answer">Hackathon is a hella #stacked event where awesome and #stacked people gather to code, hack, and build really awesome stuff. You should totally come!</p>
@@ -80,7 +80,8 @@
                         <p class="answer">Hackathon is a hella #stacked event where awesome and #stacked people gather to code, hack, and build really awesome stuff. You should totally come!</p>
                     </div>
                 </div>
-                <div id="before" class="display-none">
+
+                <div id="faqrow-2" class="display-none visible-none">
                     <div class="block">
                         <h2 class="question">How can I prepare?</h2>
                         <p class="answer">Hackathon is a hella #stacked event where awesome and #stacked people gather to code, hack, and build really awesome stuff. You should totally come!</p>
@@ -94,7 +95,8 @@
                         <p class="answer">Hackathon is a hella #stacked event where awesome and #stacked people gather to code, hack, and build really awesome stuff. You should totally come!</p>
                     </div>
                 </div>
-                <div id="during" class="display-none">
+
+                <div id="faqrow-3" class="display-none visible-none">
                     <div class="block">
                         <h2 class="question">What do I do at the event?</h2>
                         <p class="answer">Hackathon is a hella #stacked event where awesome and #stacked people gather to code, hack, and build really awesome stuff. You should totally come!</p>
@@ -108,7 +110,7 @@
                         <p class="answer">Hackathon is a hella #stacked event where awesome and #stacked people gather to code, hack, and build really awesome stuff. You should totally come!</p>
                     </div>
                 </div>
-                <div id="after" class="display-none">
+                <div id="faqrow-4" class="display-none visible-none">
                     <div class="block">
                         <h2 class="question">What happens?</h2>
                         <p class="answer">Hackathon is a hella #stacked event where awesome and #stacked people gather to code, hack, and build really awesome stuff. You should totally come!</p>

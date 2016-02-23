@@ -35,6 +35,10 @@
 	}
 
 	.container {
+		#faqrow-1, #faqrow-2, #faqrow-3, #faqrow-4 {
+			@include transition(175ms);
+		}
+		
 		.block {
 			@include span-columns(4);
 			@include padding(0 em(10px));

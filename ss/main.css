@@ -186,19 +186,19 @@ html, body {
 
 .display-none {
   display: none;
-  -webkit-transition: all all 175ms ease ease;
-  -moz-transition: all all 175ms ease ease;
-  -ms-transition: all all 175ms ease ease;
-  -o-transition: all all 175ms ease ease;
-  transition: all all 175ms ease ease; }
+  -webkit-transition: all 175ms ease;
+  -moz-transition: all 175ms ease;
+  -ms-transition: all 175ms ease;
+  -o-transition: all 175ms ease;
+  transition: all 175ms ease; }
 
 .visible-none {
   opacity: 0;
-  -webkit-transition: all all 175ms ease ease;
-  -moz-transition: all all 175ms ease ease;
-  -ms-transition: all all 175ms ease ease;
-  -o-transition: all all 175ms ease ease;
-  transition: all all 175ms ease ease; }
+  -webkit-transition: all 175ms ease;
+  -moz-transition: all 175ms ease;
+  -ms-transition: all 175ms ease;
+  -o-transition: all 175ms ease;
+  transition: all 175ms ease; }
 
 header {
   padding: 3.125em 0 1.25em; }
@@ -451,6 +451,12 @@ html {
         background: rgba(255, 255, 255, 0.33); }
       .faq .faq-nav div.active {
         background: rgba(255, 255, 255, 0.33); }
+  .faq .container #faqrow-1, .faq .container #faqrow-2, .faq .container #faqrow-3, .faq .container #faqrow-4 {
+    -webkit-transition: all 175ms ease;
+    -moz-transition: all 175ms ease;
+    -ms-transition: all 175ms ease;
+    -o-transition: all 175ms ease;
+    transition: all 175ms ease; }
   .faq .container .block {
     float: left;
     display: block;
