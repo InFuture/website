@@ -396,11 +396,11 @@ html {
     font-weight: 300;
     line-height: 1.5;
     color: #ccc; }
-  .intro #sub-form {
+  .intro #sub-form1 {
     margin: 7vh auto 0; }
-    .intro #sub-form input, .intro #sub-form button {
+    .intro #sub-form1 input, .intro #sub-form1 button {
       display: inline-block; }
-    .intro #sub-form h6 {
+    .intro #sub-form1 h6 {
       margin: 0.625em auto 0;
       color: #aaa; }
   .intro .social {

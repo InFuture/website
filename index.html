@@ -39,9 +39,9 @@
                 <h1 class="title"><span>In</span>Future</h1>
                 <h3 class="description">Hackathon for the Innovators of Tomorrow</h3>
                 <h5 class="details">May 14th - 15th, 2016</h5>
-                <form id="sub-form">
-                    <input type="email" placeholder="Your Email">
-                    <button>Subscribe</button>
+                <form id="sub-form1" onsubmit="subscribe_form(1); return false;">
+                    <input id="iptEmail" type="email" placeholder="Your Email">
+                    <button id="btnSubscribe" action="submit">Subscribe</button>
                     <h6>We'll keep you updated on only important things</h6>
                 </form>
             </div>
@@ -143,7 +143,8 @@
 
 		<script type="text/javascript" src="js/jquery.min.js"></script>
 		<script type="text/javascript" src="js/jquery.easing.min.js"></script>
-		<script type="text/javascript" src="js/jquery.plusanchor.min.js"></script>
+        <script type="text/javascript" src="js/jquery.plusanchor.min.js"></script>
+		<script type="text/javascript" src="js/script.js"></script>
 		<script type="text/javascript">
 			$(document).ready(function(){
 			    $('body').plusAnchor({
