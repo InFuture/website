@@ -10,6 +10,8 @@ var subscribe_form = function(id) {
 				// Good
 				$('#email-status').removeClass('bad');
 				$('#email-status').addClass('good');
+				$('#email-status').removeClass('fadeInUp');
+                $('#email-status').addClass('fadeInUp');
 
 				
 			}
@@ -17,8 +19,11 @@ var subscribe_form = function(id) {
 				// Bad
 				$('#email-status').removeClass('good');
 				$('#email-status').addClass('bad');
+                $('#email-status').removeClass('fadeInUp');
+                $('#email-status').addClass('fadeInUp');
 			}
 
+            $('#email-status').addClass('animate');
 			$('#email-status').text(data["message"]);
 		},
 		"json"
