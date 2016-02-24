@@ -10,8 +10,9 @@ var subscribe_form = function(id) {
 				// Good
 				$('#email-status').removeClass('bad');
 				$('#email-status').addClass('good');
-			}
 
+				
+			}
 			else {
 				// Bad
 				$('#email-status').removeClass('good');
