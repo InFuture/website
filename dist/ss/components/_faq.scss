@@ -1,7 +1,7 @@
 .faq {
 	background: url(../images/city.svg) center bottom no-repeat, linear-gradient(#003380, #0052cc, #66a4ff 80%, #ffb402);
 	background-size: auto 33%, 100% 100%;
-	@include padding(7% 0 20%);
+	@include padding(em(75px) 0 12%);
 	
 	@include media(max-width em(1000px)) {
 		@include padding(5% 0 30%);

@@ -1,6 +1,6 @@
 .about {
 	@include background(linear-gradient(#003380, #003380));
-	padding-bottom: em(50px);
+	@include padding(em(50px) 0 em(125px));
 
 	p {
 		max-width: 100%;

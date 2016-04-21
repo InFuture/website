@@ -425,7 +425,7 @@ html {
 .about {
   background: -webkit-linear-gradient(#003380, #003380);
   background: linear-gradient(#003380, #003380);
-  padding-bottom: 3.125em; }
+  padding: 3.125em 0 7.8125em; }
   .about p {
     max-width: 100%;
     width: 37.5em;
@@ -438,10 +438,29 @@ html {
     opacity: 1;
     text-align: center; }
 
+.statistics {
+  padding: 1.875em 0;
+  background: #e4ecf8;
+  background: #e4ecf8;
+  text-align: center; }
+  .statistics .stat {
+    float: left;
+    display: block;
+    margin-right: 0%;
+    width: 25%; }
+    .statistics .stat:last-child {
+      margin-right: 0; }
+    .statistics .stat h1 {
+      margin: 0 auto;
+      font-size: 4.5em;
+      font-weight: 400; }
+    .statistics .stat h4 {
+      margin: 0.3125em auto 0; }
+
 .faq {
   background: url(../images/city.svg) center bottom no-repeat, linear-gradient(#003380, #0052cc, #66a4ff 80%, #ffb402);
   background-size: auto 33%, 100% 100%;
-  padding: 7% 0 20%; }
+  padding: 4.6875em 0 12%; }
   @media screen and (max-width: 62.5em) {
     .faq {
       padding: 5% 0 30%; } }
