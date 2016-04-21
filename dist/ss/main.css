@@ -532,10 +532,48 @@ html {
       color: #fdfdfd;
       text-decoration: underline; }
 
-.subscribe {
+.partners {
   padding: 0 0 3.125em;
   background: #214478;
-  background: #214478;
+  background: #214478; }
+  .partners header h2 {
+    margin: 0 auto; }
+  .partners header p {
+    margin: 0.375em auto 0;
+    color: #fdfdfd;
+    text-align: center;
+    opacity: 0.8; }
+  .partners .container {
+    margin: 2.1875em auto 0; }
+  .partners a.partner {
+    height: 10.9375em;
+    width: auto;
+    float: left;
+    display: block;
+    margin-right: 0%;
+    width: 33.33333%; }
+    .partners a.partner:last-child {
+      margin-right: 0; }
+    .partners a.partner div {
+      height: 100%;
+      width: 100%; }
+  .partners #younghackers {
+    background: url(../images/partners/younghackers.png) no-repeat center center;
+    background: url(../images/partners/younghackers.png) no-repeat center center;
+    background-size: contain; }
+  .partners #riseny {
+    background: url(../images/partners/riseny.png) no-repeat center center;
+    background: url(../images/partners/riseny.png) no-repeat center center;
+    background-size: contain; }
+  .partners #mlh {
+    background: url(../images/partners/mlh.svg) no-repeat center center;
+    background: url(../images/partners/mlh.svg) no-repeat center center;
+    background-size: contain; }
+
+.subscribe {
+  padding: 0 0 3.125em;
+  background: #162d50;
+  background: #162d50;
   text-align: center; }
   .subscribe #sub-form1 {
     margin: 1.5625em auto 0; }
@@ -551,8 +589,8 @@ html {
       color: #e74c3c; }
 
 footer {
-  background: #162d50;
-  background: #162d50;
+  background: #0f1e35;
+  background: #0f1e35;
   padding: 1.5625em 0;
   text-align: center; }
 
