@@ -23,3 +23,11 @@ header {
 		text-align: center;
 	}
 }
+
+header.funsize {
+	padding-bottom: 0;
+
+	h2 {
+		@include margin(0 auto em(5px));
+	}
+}

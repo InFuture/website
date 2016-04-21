@@ -54,28 +54,7 @@
 			@include margin(7vh auto 0);
 		}
 	}
-
-
-	#sub-form1 {
-
-		input, button {
-			display: inline-block;
-		}
-
-		h6 {
-			@include margin(em(10px) auto 0);
-			color: $color-silverchalice;
-		}
-
-		p.good {
-			color: #2ecc71;
-		}
-
-		p.bad {
-			color: #e74c3c;
-		}
-	}
-
+	
 	.social {
 	    position: absolute;
 	    // right: 30px;

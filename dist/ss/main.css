@@ -216,6 +216,11 @@ header {
     font-weight: 400;
     text-align: center; }
 
+header.funsize {
+  padding-bottom: 0; }
+  header.funsize h2 {
+    margin: 0 auto 0.3125em; }
+
 html {
   font-size: 62.5%; }
   @media screen and (min-width: 33.75em) {
@@ -411,15 +416,6 @@ html {
       opacity: 1; }
     .intro .btnApply button {
       margin: 7vh auto 0; }
-  .intro #sub-form1 input, .intro #sub-form1 button {
-    display: inline-block; }
-  .intro #sub-form1 h6 {
-    margin: 0.625em auto 0;
-    color: #aaa; }
-  .intro #sub-form1 p.good {
-    color: #2ecc71; }
-  .intro #sub-form1 p.bad {
-    color: #e74c3c; }
   .intro .social {
     position: absolute;
     bottom: 30px;
@@ -430,10 +426,6 @@ html {
   background: -webkit-linear-gradient(#003380, #003380);
   background: linear-gradient(#003380, #003380);
   padding-bottom: 3.125em; }
-  .about header {
-    padding-bottom: 0; }
-    .about header h2 {
-      margin: 0 auto 0.3125em; }
   .about p {
     max-width: 100%;
     width: 37.5em;
@@ -519,18 +511,48 @@ html {
       margin: 0 0 1.5625em;
       font-size: 1.125em;
       font-weight: 400; }
+  .faq a {
+    color: #fdfdfd;
+    text-decoration: underline; }
 
 .sponsors {
-  padding: 0 0 1.5625em;
+  padding: 0 0 3.125em;
   background: #2C5AA0;
   background: #2C5AA0;
   text-align: center; }
-  .sponsors img {
-    width: 18.75em; }
+  .sponsors p {
+    margin: 0 auto;
+    color: #fdfdfd;
+    opacity: 0.8;
+    text-align: center; }
+  .sponsors p.interested {
+    margin: 0.4375em auto 0;
+    opacity: 1; }
+    .sponsors p.interested a {
+      color: #fdfdfd;
+      text-decoration: underline; }
+
+.subscribe {
+  padding: 0 0 3.125em;
+  background: #214478;
+  background: #214478;
+  text-align: center; }
+  .subscribe #sub-form1 {
+    margin: 1.5625em auto 0; }
+    .subscribe #sub-form1 input, .subscribe #sub-form1 button {
+      display: inline-block;
+      box-shadow: 0 0 0 black; }
+    .subscribe #sub-form1 h6 {
+      margin: 0.625em auto 0;
+      color: #aaa; }
+    .subscribe #sub-form1 p.good {
+      color: #2ecc71; }
+    .subscribe #sub-form1 p.bad {
+      color: #e74c3c; }
 
 footer {
-  background: #214478;
-  background: #214478;
+  background: #162d50;
+  background: #162d50;
   padding: 1.5625em 0;
   text-align: center; }
 
