@@ -45,8 +45,18 @@
 		color: $color-silver;
 	}
 
+	.btnApply {
+		opacity: 1;
+		
+		&:hover { opacity: 1; }
+
+		button {
+			@include margin(7vh auto 0);
+		}
+	}
+
+
 	#sub-form1 {
-		@include margin(7vh auto 0);
 
 		input, button {
 			display: inline-block;

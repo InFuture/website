@@ -16,8 +16,11 @@ button {
 	vertical-align: top;
 	outline: none;
 
-
-	@include transition(all $animation-duration $animation-timing);
-
-	&:hover { background-color: lighten($color-dodgerblue, 10%); }
+	box-shadow: 0 em(5px) em(7px) $color-dodgerblue;
+	@extend %transition;
+	
+	&:hover {
+		background-color: lighten($color-dodgerblue, 4%);
+		box-shadow: 0 em(7px) em(15px) #33a2ff;
+	}
 }

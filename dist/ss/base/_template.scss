@@ -34,3 +34,7 @@
     -o-transition: all $speed ease;
     transition: all $speed ease;
 }
+
+%transition {
+	@include transition(170ms);
+}

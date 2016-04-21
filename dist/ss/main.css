@@ -176,6 +176,13 @@ table {
                                           
 *****************************************************************
 ****************************************************************/
+button {
+  -webkit-transition: all 170ms ease;
+  -moz-transition: all 170ms ease;
+  -ms-transition: all 170ms ease;
+  -o-transition: all 170ms ease;
+  transition: all 170ms ease; }
+
 html, body {
   height: 100%;
   width: 100%;
@@ -284,13 +291,10 @@ button {
   text-transform: uppercase;
   vertical-align: top;
   outline: none;
-  -webkit-transition: all all 175ms ease ease;
-  -moz-transition: all all 175ms ease ease;
-  -ms-transition: all all 175ms ease ease;
-  -o-transition: all all 175ms ease ease;
-  transition: all all 175ms ease ease; }
+  box-shadow: 0 0.3125em 0.4375em #229aff; }
   button:hover {
-    background-color: #55b1ff; }
+    background-color: #36a3ff;
+    box-shadow: 0 0.4375em 0.9375em #33a2ff; }
 
 input {
   height: 2.625em;
@@ -401,21 +405,45 @@ html {
     font-weight: 300;
     line-height: 1.5;
     color: #ccc; }
-  .intro #sub-form1 {
-    margin: 7vh auto 0; }
-    .intro #sub-form1 input, .intro #sub-form1 button {
-      display: inline-block; }
-    .intro #sub-form1 h6 {
-      margin: 0.625em auto 0;
-      color: #aaa; }
-    .intro #sub-form1 p.good {
-      color: #2ecc71; }
-    .intro #sub-form1 p.bad {
-      color: #e74c3c; }
+  .intro .btnApply {
+    opacity: 1; }
+    .intro .btnApply:hover {
+      opacity: 1; }
+    .intro .btnApply button {
+      margin: 7vh auto 0; }
+  .intro #sub-form1 input, .intro #sub-form1 button {
+    display: inline-block; }
+  .intro #sub-form1 h6 {
+    margin: 0.625em auto 0;
+    color: #aaa; }
+  .intro #sub-form1 p.good {
+    color: #2ecc71; }
+  .intro #sub-form1 p.bad {
+    color: #e74c3c; }
   .intro .social {
     position: absolute;
     bottom: 30px;
     width: 100%;
+    text-align: center; }
+
+.about {
+  background: -webkit-linear-gradient(#003380, #003380);
+  background: linear-gradient(#003380, #003380);
+  padding-bottom: 3.125em; }
+  .about header {
+    padding-bottom: 0; }
+    .about header h2 {
+      margin: 0 auto 0.3125em; }
+  .about p {
+    max-width: 100%;
+    width: 37.5em;
+    margin: 0 auto;
+    color: #fdfdfd;
+    opacity: 0.8;
+    text-align: center; }
+  .about p.motto {
+    margin: 0.4375em auto 0;
+    opacity: 1;
     text-align: center; }
 
 .faq {
