@@ -1,0 +1,25 @@
+button {
+	@include size(auto em(50px));
+	
+	@include padding(0 em(40px));
+
+	color: $button-text;
+	@include background($button-background);
+
+	font-family: $title-font;
+	@include font-sw(em(16px), $default-font-weight);
+	letter-spacing: 0.125em;
+
+	border: 0;
+	border-radius: 0;
+
+	outline: none;
+	text-transform: uppercase;
+	box-shadow: $default-shadow;
+
+	@extend %transition;
+
+	&:hover { 
+		box-shadow: $hover-shadow;
+	}
+}

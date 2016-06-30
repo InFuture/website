@@ -1,0 +1,19 @@
+html, body {
+	@include full-screen;
+	@include zero-box;
+}
+
+body {
+	@include padding(0 em(50px));
+	background: $body-background;
+}
+
+.display-none {
+	display: none;
+	@include transition(all $animation-duration $animation-timing);
+}
+
+.visible-none {
+	opacity: 0;
+	@include transition(all $animation-duration $animation-timing);
+}

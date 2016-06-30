@@ -1,0 +1,42 @@
+// Form.scss
+
+fieldset {
+	@include size(100% auto);
+	@include margin(em(20px) auto);
+	@include padding(0);
+	border: 0;
+}
+
+label {
+	display: block;
+	@include margin(0 0 em(5px));
+	@include font-sw(em(22px), bold);
+	color: $color-boulder;
+	text-transform: uppercase;
+}
+
+input {
+	@include size(100% em(46px));
+	@include margin(0 auto);
+	@include padding(0 em(20px));
+	
+	color: $color-black;
+	background-color: $color-white;
+	
+	border: 0;
+	border-radius: 1px;
+
+	font-family: $title-font;
+	@include font-sw(em(20px), bold);
+	
+	box-shadow: $low-shadow;
+
+	text-align: left;
+	outline: none;
+
+	@extend %transition;
+
+	&:focus {
+		box-shadow: $default-shadow;
+	}
+}
