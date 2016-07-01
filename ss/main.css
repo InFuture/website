@@ -380,14 +380,15 @@ textarea {
   transform: translateY(-50%); }
 
 .hover {
-  box-shadow: 0 0.25em 0.4375em rgba(0, 0, 0, 0.15); }
+  box-shadow: 0 1.375em 2.5em black; }
 
 html, body {
   width: 100%;
   height: 100%;
   margin: 0;
   padding: 0;
-  background-color: #0C1323; }
+  background-color: #0C1323;
+  overflow: hidden; }
 
 .intro {
   width: 100%;
@@ -396,6 +397,8 @@ html, body {
   background: url("../assets/InFuture Logo Transparent.svg") no-repeat center center, -webkit-linear-gradient(rgba(1, 23, 58, 0.33), rgba(1, 23, 58, 0.33)), -webkit-linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../assets/stars.jpeg") no-repeat center center;
   background: url("../assets/InFuture Logo Transparent.svg") no-repeat center center, linear-gradient(rgba(1, 23, 58, 0.33), rgba(1, 23, 58, 0.33)), linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../assets/stars.jpeg") no-repeat center center;
   background-size: contain, 100% 100%, 100% 100%, cover; }
+  .intro .content {
+    z-index: 100; }
   .intro h1 {
     margin: 0 -1.38em 0.125em auto;
     letter-spacing: 1.38em; }
@@ -490,7 +493,7 @@ p {
   line-height: 1.8; }
 
 a {
-  color: #333333;
+  color: #262626;
   text-decoration: none; }
 
 button {
@@ -506,13 +509,16 @@ button {
   text-align: center;
   text-transform: uppercase;
   background-color: #FFFFFF;
-  color: #333333;
+  color: #262626;
   border: 3px solid #FFFFFF;
   outline: none;
   -webkit-transition: all, 175ms;
   -moz-transition: all, 175ms;
-  transition: all, 175ms;
-  box-shadow: 0 0.25em 0.4375em rgba(0, 0, 0, 0.15); }
+  transition: all, 175ms; }
+  button:hover {
+    background-color: #262626;
+    color: #FFFFFF;
+    border: 3px solid #262626; }
 
 form {
   margin: 5em auto 0 auto;
@@ -537,7 +543,7 @@ input {
   text-align: left;
   text-transform: uppercase;
   background-color: #FFFFFF;
-  color: #333333;
+  color: #262626;
   border: 0.1875em solid #FFFFFF;
   outline: none; }
 
@@ -587,5 +593,53 @@ span.i-instagram {
 span.i-snapchat {
   background: url("../assets/social/snapchat.svg") no-repeat center center;
   background-size: contain; }
+
+.parallax {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Chrome/Safari/Opera */
+  -khtml-user-select: none;
+  /* Konqueror */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  z-index: 0; }
+  .parallax h1#nyc {
+    position: absolute;
+    top: 0.5em;
+    right: 1.5em;
+    font-size: 8em;
+    letter-spacing: 0.15em;
+    line-height: 1;
+    text-align: right;
+    opacity: 0.09; }
+  .parallax h1#date {
+    position: absolute;
+    top: 1.125em;
+    right: 1.25em;
+    font-size: 10.5625em;
+    letter-spacing: 0.25em;
+    line-height: 1;
+    text-align: right;
+    opacity: 0.09; }
+  .parallax h1#year {
+    position: absolute;
+    left: 0.125em;
+    bottom: -0.5em;
+    font-size: 32em;
+    letter-spacing: 0.05em;
+    line-height: 1;
+    opacity: 0.09; }
 
 /*# sourceMappingURL=main.css.map */

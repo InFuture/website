@@ -22,10 +22,11 @@ button {
 	outline: none;
 
 	@include transition(all, $animation-speed--default);
-	@include default3D;
 
 	&:hover {
-		// 3D effect
+		background-color: $color-black--0;
+		color: $color-white--0;
+		border: 3px solid $color-black--0;
 	}
 }
 

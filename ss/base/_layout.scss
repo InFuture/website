@@ -8,6 +8,8 @@ html, body {
 
 	// Fallback
 	background-color: $color-vulcan--primary;
+
+	overflow: hidden;
 }
 
 .intro {
@@ -24,6 +26,10 @@ html, body {
 	@include background($logo, $overlay-blue, $overlay-black, $star);
 	background-size: contain, 100% 100%, 100% 100%, cover;
 
+	.content {
+		z-index: $z-index--intro;
+	}
+	
 	h1 {
 		margin: 0 -1.38em em(2px) auto;
 		letter-spacing: 1.38em;

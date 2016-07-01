@@ -1,0 +1,57 @@
+// start _parallax.scss
+
+.parallax {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+
+	width: 100%;
+	height: 100%;
+
+	overflow: hidden;
+	@include noselect;
+
+	z-index: $z-index--parallax;
+
+	h1#nyc {
+		position: absolute;
+		top: em(8px);
+		right: em(24px);
+
+		font-size: em(128px);
+		letter-spacing: 0.15em;
+		line-height: 1;
+		text-align: right;
+
+		opacity: 0.09;
+	}
+
+	h1#date {
+		position: absolute;
+		top: em(18px);
+		right: em(24px) - 0.25em;
+
+		font-size: em(169px);
+		letter-spacing: 0.25em;
+		line-height: 1;
+		text-align: right;
+
+		opacity: 0.09;
+	}
+
+	h1#year {
+		position: absolute;
+		left: em(2px);
+		bottom: em(-8px);
+
+		font-size: em(512px);
+		letter-spacing: 0.05em;
+		line-height: 1;
+
+		opacity: 0.09;
+	}
+}
+
+// end _parallax.scss

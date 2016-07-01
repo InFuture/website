@@ -29,6 +29,11 @@
                     <button>Get Updates</button>
                 </form>
             </div>
+            <div class="parallax">
+                <h1 id="nyc">New York City</h1>
+                <h1 id="date">Coming Soon</h1>
+                <h1 id="year">2016</h1>
+            </div>
         </section>
         <footer>
             <ul class="social">
@@ -48,7 +53,15 @@
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
-
+        <script type="text/javascript">
+            window.addEventListener("keydown", function(e) {
+                // space, page up, page down and arrow keys:
+                if([32, 33, 34, 37, 38, 39, 40].indexOf(e.keyCode) > -1) {
+                    e.preventDefault();
+                }
+            }, false);
+        </script>
+        
         <!-- Google Analytics -->
         <script>
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
