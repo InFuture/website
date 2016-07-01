@@ -21,9 +21,8 @@ html, body {
 	$overlay-blue: linear-gradient(rgba(1, 23, 58, 0.33), rgba(1, 23, 58, 0.33));
 	$overlay-black: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60));
 	$star: url('../assets/stars.jpeg') no-repeat center center;
-	$logo: url('../assets/InFuture Logo Transparent.svg') no-repeat center center;
 
-	@include background($logo, $overlay-blue, $overlay-black, $star);
+	@include background($overlay-blue, $overlay-black, $star);
 	background-size: contain, 100% 100%, 100% 100%, cover;
 
 	.content {
@@ -39,6 +38,24 @@ html, body {
 		margin: 0 -0.66em em(16px) auto;
 		letter-spacing: 0.66em;
 		opacity: 0.66;
+	}
+
+	.logo {
+		@include vertical-center;
+
+		width: 80%;
+		height: auto;
+
+		text-align: center;
+		opacity: 0.05;
+
+		@media screen and (max-width: $bp-md) {
+			width: 90%;
+		}
+
+		@media screen and (max-width: $bp-sm) {
+			width: 95%;
+		}
 	}
 
 	@media screen and (max-width: $bp-sm) {
