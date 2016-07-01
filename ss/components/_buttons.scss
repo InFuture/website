@@ -1,28 +1,29 @@
 // start _buttons.scss
 
 button {
-	width: 100%;
+	width: em(240px);
 	height: em(64px);
 	margin: 0;
 	padding: 0;
 
 	font-family: $font-family--primary;
 	font-size: em(12px);
-	font-weight: $font-weight--primary;
+	font-weight: $font-weight--title;
 	letter-spacing: 0.25em;
 	text-align: center;
 	text-transform: uppercase;
 
-	background-color: $color-green--primary;
-	color: $color-white--0;
+	background-color: $color-white--0;
+	color: $color-black--0;
 
 	border: 0;
 	outline: none;
 
 	@include transition(all, $animation-speed--default);
-
+	@include default3D;
+	
 	&:hover {
-		background-color: lighten($color-green--primary, 7%);
+		// 3D effect
 	}
 }
 

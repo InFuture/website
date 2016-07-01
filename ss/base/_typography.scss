@@ -1,7 +1,7 @@
 // start _typography.scss
 
 html {
-	font: $font-weight--primary normal 100% / 1.4 $font-family--primary;
+	font: $font-weight--body normal 100% / 1.4 $font-family--primary;
 
 	@media screen and (max-width: $bp-xl) {
 		font-size: 90%;
@@ -29,12 +29,13 @@ h6 {
 	padding: 0;
 
 	font-family: $font-family--primary;
-	font-weight: $font-weight--primary;
+	font-weight: $font-weight--title;
 	line-height: 1;
 }
 
 h1 {
 	font-size: em(48px);
+	text-transform: uppercase;
 }
 
 h2 {
@@ -48,7 +49,7 @@ h3 {
 }
 
 h4 {
-	font-size: em(14px);
+	font-size: em(18px);
 }
 
 p {
@@ -58,7 +59,7 @@ p {
 
 	font-family: $font-family--primary;
 	font-size: em(24px);
-	font-weight: 600;
+	font-weight: $font-weight--body;
 	line-height: 1.8;
 }
 

@@ -1,4 +1,3 @@
-@import "https://fonts.googleapis.com/css?family=Roboto:400,500";
 html {
   box-sizing: border-box; }
 
@@ -388,7 +387,7 @@ html, body {
   height: 100%;
   margin: 0;
   padding: 0;
-  background-color: #7DDA7D; }
+  background-color: #0C1323; }
 
 .container {
   width: 80%;
@@ -402,7 +401,7 @@ html, body {
       width: 100%; } }
 
 html {
-  font: 500 normal 100%/1.4 "Roboto", "Helvetica", "Arial", sans-serif; }
+  font: 500 normal 100%/1.4 "brandon-grostesque", "futura-pt", "proxima-nova", sans-serif; }
   @media screen and (max-width: 100em) {
     html {
       font-size: 90%; } }
@@ -424,12 +423,13 @@ h5,
 h6 {
   margin: 0;
   padding: 0;
-  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
-  font-weight: 500;
+  font-family: "brandon-grostesque", "futura-pt", "proxima-nova", sans-serif;
+  font-weight: 800;
   line-height: 1; }
 
 h1 {
-  font-size: 3em; }
+  font-size: 3em;
+  text-transform: uppercase; }
 
 h2 {
   font-size: 2.25em;
@@ -440,15 +440,15 @@ h3 {
   font-size: 1.5em; }
 
 h4 {
-  font-size: 0.875em; }
+  font-size: 1.125em; }
 
 p {
   max-width: 37.5em;
   margin: 0.625em 0;
   padding: 0;
-  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-family: "brandon-grostesque", "futura-pt", "proxima-nova", sans-serif;
   font-size: 1.5em;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1.8; }
 
 a {
@@ -456,25 +456,24 @@ a {
   text-decoration: none; }
 
 button {
-  width: 100%;
+  width: 15em;
   height: 4em;
   margin: 0;
   padding: 0;
-  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-family: "brandon-grostesque", "futura-pt", "proxima-nova", sans-serif;
   font-size: 0.75em;
-  font-weight: 500;
+  font-weight: 800;
   letter-spacing: 0.25em;
   text-align: center;
   text-transform: uppercase;
-  background-color: #7DDA7D;
-  color: #FFFFFF;
+  background-color: #FFFFFF;
+  color: #333333;
   border: 0;
   outline: none;
   -webkit-transition: all, 175ms;
   -moz-transition: all, 175ms;
-  transition: all, 175ms; }
-  button:hover {
-    background-color: #99e299; }
+  transition: all, 175ms;
+  box-shadow: 0 0.25em 0.4375em rgba(0, 0, 0, 0.15); }
 
 form {
   margin: 1.5em auto 0 auto;
@@ -489,9 +488,9 @@ input {
   height: 4em;
   margin: 0 auto 0.75em auto;
   padding: 0 1.75em;
-  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-family: "brandon-grostesque", "futura-pt", "proxima-nova", sans-serif;
   font-size: 0.75em;
-  font-weight: 500;
+  font-weight: 800;
   letter-spacing: 0.25em;
   line-height: 3em;
   text-align: left;
@@ -520,73 +519,5 @@ input {
   text-transform: none;
   border: 0;
   box-shadow: 0 0.25em 0.4375em rgba(0, 0, 0, 0.15); }
-
-.card {
-  width: 28.75em;
-  margin: 0 auto;
-  padding: 4em 3.5em;
-  text-align: center;
-  background: #FFFFFF;
-  box-shadow: 0 0.25em 0.4375em rgba(0, 0, 0, 0.15); }
-  .card h2 {
-    margin: 0.5em auto; }
-
-img {
-  width: 10em;
-  height: 10em;
-  text-align: center;
-  border-radius: 50%; }
-
-.input-container {
-  margin: 4em auto; }
-
-.customize h4 {
-  margin: 0.5em 2.625em;
-  font-weight: 400;
-  color: #333333;
-  opacity: 0.50; }
-
-.url-container {
-  background: #FFFFFF;
-  box-shadow: 0 0.25em 0.4375em rgba(0, 0, 0, 0.15); }
-
-.url {
-  width: 100%;
-  height: 8em;
-  padding: 0 2.625em;
-  border-bottom: 2px solid #EEEEEE;
-  display: block; }
-  .url::after {
-    clear: both;
-    content: "";
-    display: block; }
-  .url .content {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 65.88078%; }
-    .url .content:last-child {
-      margin-right: 0; }
-  .url .stats {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 31.76157%;
-    text-align: right;
-    text-transform: uppercase; }
-    .url .stats:last-child {
-      margin-right: 0; }
-  .url a, .url h4 {
-    font-weight: 400;
-    letter-spacing: 0.05em; }
-  .url .inactive {
-    margin: 0.625em 0 0.375em 0;
-    color: #AAAAAA; }
-  .url .link {
-    color: #7DDA7D; }
-  .url .date {
-    margin: 0 0 0.5em 0;
-    text-transform: uppercase;
-    color: #AAAAAA; }
 
 /*# sourceMappingURL=main.css.map */
