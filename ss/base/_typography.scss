@@ -31,17 +31,18 @@ h6 {
 	font-family: $font-family--primary;
 	font-weight: $font-weight--title;
 	line-height: 1;
+
+	color: $color-white--0;
+	text-transform: uppercase;
 }
 
 h1 {
-	font-size: em(48px);
-	text-transform: uppercase;
+	font-size: em(64px);
 }
 
 h2 {
-	font-size: em(36px);
+	font-size: em(48px);
 	letter-spacing: 0.075em;
-	text-transform: uppercase;
 }
 
 h3 {

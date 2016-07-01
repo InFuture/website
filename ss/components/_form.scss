@@ -1,7 +1,7 @@
 // start _form.scss
 form {
-	margin: em(24px) auto 0 auto;
-	font-size: em(20px);
+	margin: em(80px) auto 0 auto;
+	font-size: em(18px);
 
 	@media screen and (max-width: $bp-sm) {
 		button {
@@ -12,13 +12,15 @@ form {
 }
 
 input {
-	width: 100%;
-	height: em(64px);
-	margin: 0 auto em(12px) auto;
+	vertical-align: top;
+
+	width: em(480px);
+	height: em(54px);
+	margin: 0 auto;
 	padding: 0 em(28px);
 
 	font-family: $font-family--primary;
-	font-size: em(12px);
+	font-size: em(14px);
 	font-weight: $font-weight--title;
 	letter-spacing: 0.25em;
 	line-height: em(48px);
@@ -28,21 +30,10 @@ input {
 	background-color: $color-white--0;
 	color: $color-black--0;
 
-	border: em(3px) solid $color-white--2;
+	border: em(3px) solid $color-white--0;
 	outline: none;
 }
 
 @include placeholder($color-black--2);
 
-.input-url {
-	padding: 0 em(42px);
-	
-	font-size: em(16px);
-	letter-spacing: 0.125em;
-	text-transform: none;
-
-	border: 0;
-
-	@include default3D;
-}
 // end _form.scss

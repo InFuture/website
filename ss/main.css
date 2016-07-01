@@ -389,6 +389,18 @@ html, body {
   padding: 0;
   background-color: #0C1323; }
 
+.intro {
+  width: 100%;
+  height: 100%;
+  text-align: center; }
+  .intro h1 {
+    margin: 0 -1.38em 0.5em auto;
+    letter-spacing: 1.38em; }
+  .intro h4 {
+    margin: 0.125em -0.66em 1em auto;
+    letter-spacing: 0.66em;
+    opacity: 0.66; }
+
 .container {
   width: 80%;
   max-width: 50em;
@@ -425,16 +437,16 @@ h6 {
   padding: 0;
   font-family: "brandon-grostesque", "futura-pt", "proxima-nova", sans-serif;
   font-weight: 800;
-  line-height: 1; }
+  line-height: 1;
+  color: #FFFFFF;
+  text-transform: uppercase; }
 
 h1 {
-  font-size: 3em;
-  text-transform: uppercase; }
+  font-size: 4em; }
 
 h2 {
-  font-size: 2.25em;
-  letter-spacing: 0.075em;
-  text-transform: uppercase; }
+  font-size: 3em;
+  letter-spacing: 0.075em; }
 
 h3 {
   font-size: 1.5em; }
@@ -456,19 +468,20 @@ a {
   text-decoration: none; }
 
 button {
-  width: 15em;
-  height: 4em;
-  margin: 0;
+  vertical-align: top;
+  width: 17.5em;
+  height: 3.375em;
+  margin: 0 auto 0 0.25em;
   padding: 0;
   font-family: "brandon-grostesque", "futura-pt", "proxima-nova", sans-serif;
-  font-size: 0.75em;
+  font-size: 0.875em;
   font-weight: 800;
-  letter-spacing: 0.25em;
+  letter-spacing: 0.5em;
   text-align: center;
   text-transform: uppercase;
   background-color: #FFFFFF;
   color: #333333;
-  border: 0;
+  border: 3px solid #FFFFFF;
   outline: none;
   -webkit-transition: all, 175ms;
   -moz-transition: all, 175ms;
@@ -476,20 +489,21 @@ button {
   box-shadow: 0 0.25em 0.4375em rgba(0, 0, 0, 0.15); }
 
 form {
-  margin: 1.5em auto 0 auto;
-  font-size: 1.25em; }
+  margin: 5em auto 0 auto;
+  font-size: 1.125em; }
   @media screen and (max-width: 33.75em) {
     form button {
       width: 26.25em;
       margin: 0.5em auto 0 auto; } }
 
 input {
-  width: 100%;
-  height: 4em;
-  margin: 0 auto 0.75em auto;
+  vertical-align: top;
+  width: 30em;
+  height: 3.375em;
+  margin: 0 auto;
   padding: 0 1.75em;
   font-family: "brandon-grostesque", "futura-pt", "proxima-nova", sans-serif;
-  font-size: 0.75em;
+  font-size: 0.875em;
   font-weight: 800;
   letter-spacing: 0.25em;
   line-height: 3em;
@@ -497,7 +511,7 @@ input {
   text-transform: uppercase;
   background-color: #FFFFFF;
   color: #333333;
-  border: 0.1875em solid #CCCCCC;
+  border: 0.1875em solid #FFFFFF;
   outline: none; }
 
 ::-webkit-input-placeholder {
@@ -511,13 +525,5 @@ input {
 
 :-ms-input-placeholder {
   color: #777777; }
-
-.input-url {
-  padding: 0 2.625em;
-  font-size: 1em;
-  letter-spacing: 0.125em;
-  text-transform: none;
-  border: 0;
-  box-shadow: 0 0.25em 0.4375em rgba(0, 0, 0, 0.15); }
 
 /*# sourceMappingURL=main.css.map */
