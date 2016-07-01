@@ -646,7 +646,7 @@ span.i-snapchat {
     letter-spacing: 0.125em;
     line-height: 1;
     text-align: right;
-    opacity: 0.09;
+    opacity: 0.03;
     white-space: nowrap; }
     @media screen and (max-width: 61.625em) {
       .parallax h1#date {
@@ -658,6 +658,6 @@ span.i-snapchat {
     font-size: 32em;
     letter-spacing: 0.05em;
     line-height: 1;
-    opacity: 0.09; }
+    opacity: 0.04; }
 
 /*# sourceMappingURL=main.css.map */
