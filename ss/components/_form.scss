@@ -37,4 +37,24 @@ input {
 
 @include placeholder($color-black--2);
 
+.spam {
+	margin: em(16px) auto 0 auto;
+	letter-spacing: 0.125em;
+
+	opacity: 0.33;	
+}
+
+.email-status {
+	margin: em(12px) auto 0 auto;
+	letter-spacing: 0.125em;
+
+	&.success {
+		color: $color-blue--primary;
+	}
+
+	&.failure {
+		color: $color-red--primary;
+	}
+}
+
 // end _form.scss

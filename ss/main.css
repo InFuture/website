@@ -559,6 +559,19 @@ input {
 :-ms-input-placeholder {
   color: #777777; }
 
+.spam {
+  margin: 1em auto 0 auto;
+  letter-spacing: 0.125em;
+  opacity: 0.33; }
+
+.email-status {
+  margin: 0.75em auto 0 auto;
+  letter-spacing: 0.125em; }
+  .email-status.success {
+    color: #64B5F6; }
+  .email-status.failure {
+    color: #F06292; }
+
 .social {
   margin: 0 auto;
   padding: 0;
@@ -633,6 +646,9 @@ span.i-snapchat {
     line-height: 1;
     text-align: right;
     opacity: 0.09; }
+    @media screen and (max-width: 61.625em) {
+      .parallax h1#date {
+        display: none; } }
   .parallax h1#year {
     position: absolute;
     left: 0.125em;

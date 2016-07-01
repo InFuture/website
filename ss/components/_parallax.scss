@@ -39,6 +39,10 @@
 		text-align: right;
 
 		opacity: 0.09;
+
+		@media screen and (max-width: $bp-md) {
+			display: none;
+		}
 	}
 
 	h1#year {
