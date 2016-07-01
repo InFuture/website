@@ -395,14 +395,29 @@ html, body {
   text-align: center;
   background: url("../assets/InFuture Logo Transparent.svg") no-repeat center center, -webkit-linear-gradient(rgba(1, 23, 58, 0.33), rgba(1, 23, 58, 0.33)), -webkit-linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../assets/stars.jpeg") no-repeat center center;
   background: url("../assets/InFuture Logo Transparent.svg") no-repeat center center, linear-gradient(rgba(1, 23, 58, 0.33), rgba(1, 23, 58, 0.33)), linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../assets/stars.jpeg") no-repeat center center;
-  background-size: 100% 100%, 100% 100%, cover; }
+  background-size: contain, 100% 100%, 100% 100%, cover; }
   .intro h1 {
-    margin: 0 -1.38em 0.5em auto;
+    margin: 0 -1.38em 0.125em auto;
     letter-spacing: 1.38em; }
   .intro h4 {
-    margin: 0.125em -0.66em 1em auto;
+    margin: 0 -0.66em 1em auto;
     letter-spacing: 0.66em;
     opacity: 0.66; }
+
+footer {
+  position: absolute;
+  bottom: 3em;
+  width: 100%;
+  text-align: center; }
+  footer ul.options {
+    margin: 0;
+    padding: 0; }
+    footer ul.options li {
+      display: inline-block;
+      margin: 0.5em 0.75em 0 0.75em; }
+      footer ul.options li h4 {
+        letter-spacing: 0.125em;
+        opacity: 0.66; }
 
 .container {
   width: 80%;
@@ -440,7 +455,7 @@ h6 {
   padding: 0;
   font-family: "brandon-grostesque", "futura-pt", "proxima-nova", sans-serif;
   font-weight: 800;
-  line-height: 1;
+  line-height: 1.6;
   color: #FFFFFF;
   text-transform: uppercase; }
 
@@ -455,7 +470,8 @@ h3 {
   font-size: 1.5em; }
 
 h4 {
-  font-size: 1.125em; }
+  font-size: 1.125em;
+  line-height: 2; }
 
 p {
   max-width: 37.5em;
@@ -528,5 +544,40 @@ input {
 
 :-ms-input-placeholder {
   color: #777777; }
+
+.social {
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+  list-style: none; }
+  .social li {
+    display: inline-block; }
+    .social li span {
+      display: inline-block;
+      width: 1.5em;
+      height: 1.5em;
+      margin: 0 1em;
+      opacity: 0.66;
+      -webkit-transition: all, 175ms;
+      -moz-transition: all, 175ms;
+      transition: all, 175ms; }
+      .social li span:hover {
+        opacity: 0.66; }
+
+span.i-facebook {
+  background: url("../assets/social/facebook.svg") no-repeat center center;
+  background-size: contain; }
+
+span.i-twitter {
+  background: url("../assets/social/twitter.svg") no-repeat center center;
+  background-size: contain; }
+
+span.i-instagram {
+  background: url("../assets/social/instagram.svg") no-repeat center center;
+  background-size: contain; }
+
+span.i-snapchat {
+  background: url("../assets/social/snapchat.svg") no-repeat center center;
+  background-size: contain; }
 
 /*# sourceMappingURL=main.css.map */

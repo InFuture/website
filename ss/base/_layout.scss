@@ -22,21 +22,42 @@ html, body {
 	$logo: url('../assets/InFuture Logo Transparent.svg') no-repeat center center;
 
 	@include background($logo, $overlay-blue, $overlay-black, $star);
-	background-size: 100% 100%, 100% 100%, cover;
-
-	.logo {
-
-	}
+	background-size: contain, 100% 100%, 100% 100%, cover;
 
 	h1 {
-		margin: 0 -1.38em em(8px) auto;
+		margin: 0 -1.38em em(2px) auto;
 		letter-spacing: 1.38em;
 	}
 
 	h4 {
-		margin: em(2px) -0.66em em(16px) auto;
+		margin: 0 -0.66em em(16px) auto;
 		letter-spacing: 0.66em;
 		opacity: 0.66;
+	}
+
+}
+
+footer {
+	position: absolute;
+	bottom: em(48px);
+
+	width: 100%;
+	text-align: center;
+
+	ul.options {
+		margin: 0;
+		padding: 0;
+
+		li {
+			display: inline-block;
+			margin: em(8px) em(12px) 0 em(12px);
+
+			h4 {
+				letter-spacing: 0.125em;
+				opacity: 0.66;
+			}
+
+		}
 	}
 }
 
