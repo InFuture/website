@@ -35,6 +35,16 @@ html, body {
 		opacity: 0.66;
 	}
 
+	@media screen and (max-width: $bp-sm) {
+		padding: 0 em(16px);
+
+		h1 {
+			margin: 0 -0.66em em(2px) auto;
+
+			font-size: em(48px);
+			letter-spacing: 0.66em;
+		}
+	}
 }
 
 footer {

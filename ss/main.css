@@ -403,6 +403,13 @@ html, body {
     margin: 0 -0.66em 1em auto;
     letter-spacing: 0.66em;
     opacity: 0.66; }
+  @media screen and (max-width: 42.5em) {
+    .intro {
+      padding: 0 1em; }
+      .intro h1 {
+        margin: 0 -0.66em 0.125em auto;
+        font-size: 3em;
+        letter-spacing: 0.66em; } }
 
 footer {
   position: absolute;
@@ -423,7 +430,7 @@ footer {
   width: 80%;
   max-width: 50em;
   margin: 0 auto; }
-  @media screen and (max-width: 87.5em) {
+  @media screen and (max-width: 75em) {
     .container {
       width: 90%; } }
   @media screen and (max-width: 61.625em) {
@@ -435,13 +442,13 @@ html {
   @media screen and (max-width: 100em) {
     html {
       font-size: 90%; } }
-  @media screen and (max-width: 87.5em) {
+  @media screen and (max-width: 75em) {
     html {
       font-size: 80%; } }
   @media screen and (max-width: 61.625em) {
     html {
       font-size: 70%; } }
-  @media screen and (max-width: 33.75em) {
+  @media screen and (max-width: 42.5em) {
     html {
       font-size: 60%; } }
 
@@ -510,10 +517,11 @@ button {
 form {
   margin: 5em auto 0 auto;
   font-size: 1.125em; }
-  @media screen and (max-width: 33.75em) {
+  @media screen and (max-width: 42.5em) {
     form button {
-      width: 26.25em;
-      margin: 0.5em auto 0 auto; } }
+      display: block;
+      width: 30em;
+      margin: 0.75em auto 0 auto; } }
 
 input {
   vertical-align: top;
