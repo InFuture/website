@@ -6,6 +6,7 @@ html, body {
 	margin: 0;
 	padding: 0;
 
+	// Fallback
 	background-color: $color-vulcan--primary;
 }
 
@@ -13,6 +14,19 @@ html, body {
 	width: 100%;
 	height: 100%;
 	text-align: center;
+
+	// Real deal
+	$overlay-blue: linear-gradient(rgba(1, 23, 58, 0.33), rgba(1, 23, 58, 0.33));
+	$overlay-black: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60));
+	$star: url('../assets/stars.jpeg') no-repeat center center;
+	$logo: url('../assets/InFuture Logo Transparent.svg') no-repeat center center;
+
+	@include background($logo, $overlay-blue, $overlay-black, $star);
+	background-size: 100% 100%, 100% 100%, cover;
+
+	.logo {
+
+	}
 
 	h1 {
 		margin: 0 -1.38em em(8px) auto;
