@@ -640,12 +640,14 @@ span.i-snapchat {
   .parallax h1#date {
     position: absolute;
     top: 1.125em;
-    right: 1.25em;
+    right: 1.375em;
+    width: 100%;
     font-size: 10.5625em;
-    letter-spacing: 0.25em;
+    letter-spacing: 0.125em;
     line-height: 1;
     text-align: right;
-    opacity: 0.09; }
+    opacity: 0.09;
+    white-space: nowrap; }
     @media screen and (max-width: 61.625em) {
       .parallax h1#date {
         display: none; } }

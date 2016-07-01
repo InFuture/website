@@ -31,14 +31,16 @@
 	h1#date {
 		position: absolute;
 		top: em(18px);
-		right: em(24px) - 0.25em;
+		right: em(24px) - 0.125em;
 
+		width: 100%;
 		font-size: em(169px);
-		letter-spacing: 0.25em;
+		letter-spacing: 0.125em;
 		line-height: 1;
 		text-align: right;
 
 		opacity: 0.09;
+		white-space: nowrap;
 
 		@media screen and (max-width: $bp-md) {
 			display: none;
