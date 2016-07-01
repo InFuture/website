@@ -1,25 +1,29 @@
+// start _buttons.scss
+
 button {
-	@include size(auto em(50px));
-	
-	@include padding(0 em(40px));
+	width: 100%;
+	height: em(64px);
+	margin: 0;
+	padding: 0;
 
-	color: $button-text;
-	@include background($button-background);
+	font-family: $font-family--primary;
+	font-size: em(12px);
+	font-weight: $font-weight--primary;
+	letter-spacing: 0.25em;
+	text-align: center;
+	text-transform: uppercase;
 
-	font-family: $title-font;
-	@include font-sw(em(16px), $default-font-weight);
-	letter-spacing: 0.125em;
+	background-color: $color-green--primary;
+	color: $color-white--0;
 
 	border: 0;
-	border-radius: 0;
-
 	outline: none;
-	text-transform: uppercase;
-	box-shadow: $default-shadow;
 
-	@extend %transition;
+	@include transition(all, $animation-speed--default);
 
-	&:hover { 
-		box-shadow: $hover-shadow;
+	&:hover {
+		background-color: lighten($color-green--primary, 7%);
 	}
 }
+
+// end _buttons.scss

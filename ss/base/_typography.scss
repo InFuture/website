@@ -1,67 +1,70 @@
-// Typography
+// start _typography.scss
 
 html {
-  font-size: 62.5%;
-  @media screen and (min-width: $bp-sm) { font-size: 65%; }
-  @media screen and (min-width: $bp-md) { font-size: 70%; }
-  @media screen and (min-width: $bp-lg) { font-size: 80%; }
-  @media screen and (min-width: $bp-xl) { font-size: 92.5%; }
+	font: $font-weight--primary normal 100% / 1.4 $font-family--primary;
+
+	@media screen and (max-width: $bp-xl) {
+		font-size: 90%;
+	}
+
+	@media screen and (max-width: $bp-lg) {
+		font-size: 80%;
+	}
+
+	@media screen and (max-width: $bp-md) {
+		font-size: 70%;
+	}
+
+	@media screen and (max-width: $bp-sm) {
+		font-size: 60%;
+	}
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+	padding: 0;
+
+	font-family: $font-family--primary;
+	font-weight: $font-weight--primary;
+	line-height: 1;
 }
 
-body {
-  color: $color-mineshaft;
-  font-family: $body-font;
-  font-size: 1em;
-  font-weight: 300;
-  line-height: $body-lh;
-  
+h1 {
+	font-size: em(48px);
 }
 
-%header {
-  @include margin(0);
-  @include padding(0);
-	font-family: $body-font;
-	font-weight: $default-font-weight;
-	line-height: $body-lh;
+h2 {
+	font-size: em(36px);
+	letter-spacing: 0.075em;
+	text-transform: uppercase;
 }
 
-@for $index from 1 through length($font-sizes) {
-  $size: nth($font-sizes, $index);
-  h#{$index} {
-    @extend %header;
-    font-size: em($size);
-  }
+h3 {
+	font-size: em(24px);
 }
 
-header {
-    @include size(100% 10vh);
-
-    h1.header {
-      font-size: em(32px);
-      font-weight: 600;
-      text-align: center;
-      text-transform: uppercase;
-      letter-spacing: 0.25em;
-
-      @include vertical-center;
-    }
+h4 {
+	font-size: em(14px);
 }
 
 p {
-  font-family: $body-font;
-  font-size: em(18px);
-  font-weight: $default-font-weight;
-  line-height: 1.8;
+	max-width: em(600px);
+	margin: em(10px) 0;
+	padding: 0;
+
+	font-family: $font-family--primary;
+	font-size: em(24px);
+	font-weight: 600;
+	line-height: 1.8;
 }
 
 a {
-  color: $color-dodgerblue;
-  text-decoration: none;
-  transition: color $animation-duration $animation-timing;
-
-  &:active,
-  &:focus,
-  &:hover {
-    opacity: 0.8;
-  }
+	color: $color-black--0;
+	text-decoration: none;
 }
+
+// end _typography.scss

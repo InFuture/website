@@ -1,42 +1,48 @@
-// Form.scss
+// start _form.scss
+form {
+	margin: em(24px) auto 0 auto;
+	font-size: em(20px);
 
-fieldset {
-	@include size(100% auto);
-	@include margin(em(20px) auto);
-	@include padding(0);
-	border: 0;
-}
-
-label {
-	display: block;
-	@include margin(0 0 em(5px));
-	@include font-sw(em(22px), bold);
-	color: $color-boulder;
-	text-transform: uppercase;
+	@media screen and (max-width: $bp-sm) {
+		button {
+			width: em(420px);
+			margin: em(8px) auto 0 auto;
+		}
+	}
 }
 
 input {
-	@include size(100% em(46px));
-	@include margin(0 auto);
-	@include padding(0 em(20px));
-	
-	color: $color-black;
-	background-color: $color-white;
-	
-	border: 0;
-	border-radius: 1px;
+	width: 100%;
+	height: em(64px);
+	margin: 0 auto em(12px) auto;
+	padding: 0 em(28px);
 
-	font-family: $title-font;
-	@include font-sw(em(20px), bold);
-	
-	box-shadow: $low-shadow;
-
+	font-family: $font-family--primary;
+	font-size: em(12px);
+	font-weight: $font-weight--primary;
+	letter-spacing: 0.25em;
+	line-height: em(48px);
 	text-align: left;
+	text-transform: uppercase;
+
+	background-color: $color-white--0;
+	color: $color-black--0;
+
+	border: em(3px) solid $color-white--2;
 	outline: none;
-
-	@extend %transition;
-
-	&:focus {
-		box-shadow: $default-shadow;
-	}
 }
+
+@include placeholder($color-black--2);
+
+.input-url {
+	padding: 0 em(42px);
+	
+	font-size: em(16px);
+	letter-spacing: 0.125em;
+	text-transform: none;
+
+	border: 0;
+
+	@include default3D;
+}
+// end _form.scss

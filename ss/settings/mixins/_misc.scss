@@ -1,0 +1,29 @@
+// start _misc.scss
+
+@mixin default3D {
+	box-shadow: 0 em(4px) em(7px) rgba(0, 0, 0, 0.15);
+}
+
+.hover {
+	@include default3D;
+}
+
+@mixin placeholder($color) {
+	::-webkit-input-placeholder {
+	   color: $color;
+	}
+
+	:-moz-placeholder {
+	   color: $color;  
+	}
+
+	::-moz-placeholder {
+	   color: $color;  
+	}
+
+	:-ms-input-placeholder {  
+	   color: $color;  
+	}
+}
+
+// end _misc.scss
